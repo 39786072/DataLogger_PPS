@@ -1,0 +1,12 @@
+14:11:36 **** Incremental Build of configuration Debug for project ttrd13a_lpc176x_ttc_usb_check_system_temperature ****
+make -r all 
+Building file: ../tasks/heartbeat_1769_003-0_c02a.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__USE_CMSIS=CMSISv2p00_LPC17xx -D__REDLIB__ -D__CODE_RED -O0 -g3 -Wall -Werror -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -D__REDLIB__ -specs=redlib.specs -MMD -MP -MF"tasks/heartbeat_1769_003-0_c02a.d" -MT"tasks/heartbeat_1769_003-0_c02a.o" -MT"tasks/heartbeat_1769_003-0_c02a.d" -o "tasks/heartbeat_1769_003-0_c02a.o" "../tasks/heartbeat_1769_003-0_c02a.c"
+In file included from ../tasks/heartbeat_1769_003-0_c02a.c:62:0:
+../tasks/../main/main.h:61:21: fatal error: lpc17xx.h: No such file or directory
+compilation terminated.
+make: *** [tasks/heartbeat_1769_003-0_c02a.o] Error 1
+
+14:11:36 Build Finished (took 313ms)
+

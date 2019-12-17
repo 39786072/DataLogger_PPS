@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;DCS/tasks/buffer.c&apos; to &apos;DCS_buffer.c&apos;" description="Rename resource &apos;buffer.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="tasks/buffer.c" name="DCS_buffer.c" stamp="1564981371423" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;DCS/tasks/buffer.h&apos; to &apos;DCS_buffer.h&apos;" description="Rename resource &apos;buffer.h&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="tasks/buffer.h" name="DCS_buffer.h" stamp="1564981384422" updateReferences="true"/>
+</session>

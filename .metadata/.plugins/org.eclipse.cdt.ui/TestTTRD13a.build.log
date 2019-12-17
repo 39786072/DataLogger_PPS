@@ -1,0 +1,25 @@
+16:23:31 **** Incremental Build of configuration Debug for project TestTTRD13a ****
+make -r all 
+Building file: ../src/system_mode/system_mode_1769_003-0_c13a.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -D__REDLIB__ -I"D:\Santiago\Universidad\PPS\Workspaces\Pruebas\TestTTRD13a\inc" -I"D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/system_mode/system_mode_1769_003-0_c13a.d" -MT"src/system_mode/system_mode_1769_003-0_c13a.o" -MT"src/system_mode/system_mode_1769_003-0_c13a.d" -o "src/system_mode/system_mode_1769_003-0_c13a.o" "../src/system_mode/system_mode_1769_003-0_c13a.c"
+Finished building: ../src/system_mode/system_mode_1769_003-0_c13a.c
+ 
+Building target: TestTTRD13a.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug" -Xlinker -Map="TestTTRD13a.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "TestTTRD13a_Debug.ld" -o "TestTTRD13a.axf"  ./src/tasks/heartbeat_1769_003-0_c02a.o ./src/tasks/menu_1769_003-0_c13a.o ./src/tasks/spi_7_seg_display_1769_003-0_c13a.o ./src/tasks/switch_ea-sw3_1769_003-0_c13a.o ./src/tasks/watchdog_1769_003-0_c02a.o  ./src/system_tests/system_test_mcu_temperature_1769_003-0_c13a.o  ./src/system_mode/system_mode_1769_003-0_c13a.o  ./src/scheduler/ttc_sch_1769_003-0_c02a.o  ./src/main/main.o  ./src/bertrik_sikken/lpcusb.o ./src/bertrik_sikken/serial_fifo.o  ./src/arm-nxp/cr_startup_lpc176x.o ./src/arm-nxp/lpc17xx_adc.o ./src/arm-nxp/lpc17xx_can.o ./src/arm-nxp/lpc17xx_clkpwr.o ./src/arm-nxp/lpc17xx_dac.o ./src/arm-nxp/lpc17xx_emac.o ./src/arm-nxp/lpc17xx_exti.o ./src/arm-nxp/lpc17xx_gpdma.o ./src/arm-nxp/lpc17xx_gpio.o ./src/arm-nxp/lpc17xx_i2c.o ./src/arm-nxp/lpc17xx_i2s.o ./src/arm-nxp/lpc17xx_iap.o ./src/arm-nxp/lpc17xx_libcfg_default.o ./src/arm-nxp/lpc17xx_mcpwm.o ./src/arm-nxp/lpc17xx_nvic.o ./src/arm-nxp/lpc17xx_pinsel.o ./src/arm-nxp/lpc17xx_pwm.o ./src/arm-nxp/lpc17xx_qei.o ./src/arm-nxp/lpc17xx_rit.o ./src/arm-nxp/lpc17xx_rtc.o ./src/arm-nxp/lpc17xx_spi.o ./src/arm-nxp/lpc17xx_ssp.o ./src/arm-nxp/lpc17xx_systick.o ./src/arm-nxp/lpc17xx_timer.o ./src/arm-nxp/lpc17xx_uart.o ./src/arm-nxp/lpc17xx_wdt.o ./src/arm-nxp/usbcontrol.o ./src/arm-nxp/usbhw_lpc.o ./src/arm-nxp/usbinit.o ./src/arm-nxp/usbstdreq.o  ./src/crp.o   -lCMSIS_CORE_LPC17xx
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:       10916 B       512 KB      2.08%
+        RamLoc32:        1804 B        32 KB      5.51%
+        RamAHB32:          0 GB        32 KB      0.00%
+Finished building target: TestTTRD13a.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "TestTTRD13a.axf"; # arm-none-eabi-objcopy -v -O binary "TestTTRD13a.axf" "TestTTRD13a.bin" ; # checksum -p LPC1769 -d "TestTTRD13a.bin";
+   text	   data	    bss	    dec	    hex	filename
+  10900	     16	   1788	  12704	   31a0	TestTTRD13a.axf
+ 
+
+16:23:32 Build Finished (took 1s.78ms)
+

@@ -1,0 +1,10 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(__weak__main.o)
+                              ./src/cr_startup_lpc175x_6x.o (__main)
+c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(division_64.o)
+                              ./src/lpc17xx_i2s.o (__aeabi_uldivmod)
+c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(division_idiv0.o)
+                              c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(division_64.o) (__aeabi_idiv0)
+c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(float.o)
+                              ./src/lpc17xx_systick.o (__aeabi_ui2f)

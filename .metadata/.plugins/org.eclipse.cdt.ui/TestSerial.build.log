@@ -1,0 +1,101 @@
+16:33:30 **** Incremental Build of configuration Debug for project TestSerial ****
+make -r all 
+Building file: ../src/TestSerial.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M3 -D__USE_CMSIS=CMSIS_CORE_LPC17xx -D__LPC17XX__ -D__REDLIB__ -I"D:\Santiago\Universidad\PPS\Workspaces\Pruebas\TestSerial\inc" -I"D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\inc" -O0 -fno-common -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m3 -mthumb -specs=redlib.specs -MMD -MP -MF"src/TestSerial.d" -MT"src/TestSerial.o" -MT"src/TestSerial.d" -o "src/TestSerial.o" "../src/TestSerial.c"
+In file included from ../src/TestSerial.c:12:0:
+../src/TestSerial.c: In function 'Configurar_UART0':
+D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\inc/LPC17xx.h:999:31: warning: passing argument 1 of 'UART_Init' from incompatible pointer type [-Wincompatible-pointer-types]
+ #define LPC_UART0             ((LPC_UART0_TypeDef     *) LPC_UART0_BASE    )
+                               ^
+../src/TestSerial.c:135:12: note: in expansion of macro 'LPC_UART0'
+  UART_Init(LPC_UART0, &UartCfg);
+            ^
+In file included from ../src/TestSerial.c:16:0:
+D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\inc/lpc17xx_uart.h:590:6: note: expected 'LPC_UART_TypeDef * {aka struct <anonymous> *}' but argument is of type 'LPC_UART0_TypeDef * {aka struct <anonymous> *}'
+ void UART_Init(LPC_UART_TypeDef *UARTx, UART_CFG_Type *UART_ConfigStruct);
+      ^
+In file included from ../src/TestSerial.c:12:0:
+D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\inc/LPC17xx.h:999:31: warning: passing argument 1 of 'UART_TxCmd' from incompatible pointer type [-Wincompatible-pointer-types]
+ #define LPC_UART0             ((LPC_UART0_TypeDef     *) LPC_UART0_BASE    )
+                               ^
+../src/TestSerial.c:137:13: note: in expansion of macro 'LPC_UART0'
+  UART_TxCmd(LPC_UART0, ENABLE);
+             ^
+In file included from ../src/TestSerial.c:16:0:
+D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\inc/lpc17xx_uart.h:613:6: note: expected 'LPC_UART_TypeDef * {aka struct <anonymous> *}' but argument is of type 'LPC_UART0_TypeDef * {aka struct <anonymous> *}'
+ void UART_TxCmd(LPC_UART_TypeDef *UARTx, FunctionalState NewState);
+      ^
+../src/TestSerial.c: In function 'main':
+../src/TestSerial.c:149:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("Hello World\n");
+  ^
+../src/TestSerial.c:30:18: warning: pointer targets in passing argument 2 of 'UART_Send' differ in signedness [-Wpointer-sign]
+ #define ATCWMODE "AT+CWMODE=0\r\n"        //Sets Wi-Fi Mode
+                  ^
+../src/TestSerial.c:150:23: note: in expansion of macro 'ATCWMODE'
+  UART_Send(LPC_UART3, ATCWMODE, 13, BLOCKING);
+                       ^
+In file included from ../src/TestSerial.c:16:0:
+D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\inc/lpc17xx_uart.h:597:10: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'char *'
+ uint32_t UART_Send(LPC_UART_TypeDef *UARTx, uint8_t *txbuf,
+          ^
+In file included from ../src/TestSerial.c:12:0:
+D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\inc/LPC17xx.h:999:31: warning: passing argument 1 of 'UART_SendByte' from incompatible pointer type [-Wincompatible-pointer-types]
+ #define LPC_UART0             ((LPC_UART0_TypeDef     *) LPC_UART0_BASE    )
+                               ^
+../src/TestSerial.c:152:16: note: in expansion of macro 'LPC_UART0'
+  UART_SendByte(LPC_UART0, 'D');
+                ^
+In file included from ../src/TestSerial.c:16:0:
+D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\inc/lpc17xx_uart.h:595:6: note: expected 'LPC_UART_TypeDef * {aka struct <anonymous> *}' but argument is of type 'LPC_UART0_TypeDef * {aka struct <anonymous> *}'
+ void UART_SendByte(LPC_UART_TypeDef* UARTx, uint8_t Data);
+      ^
+In file included from ../src/TestSerial.c:12:0:
+D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\inc/LPC17xx.h:999:31: warning: passing argument 1 of 'UART_GetLineStatus' from incompatible pointer type [-Wincompatible-pointer-types]
+ #define LPC_UART0             ((LPC_UART0_TypeDef     *) LPC_UART0_BASE    )
+                               ^
+../src/TestSerial.c:180:27: note: in expansion of macro 'LPC_UART0'
+   if ((UART_GetLineStatus(LPC_UART0) & 0x1) == 1) {
+                           ^
+In file included from ../src/TestSerial.c:16:0:
+D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\inc/lpc17xx_uart.h:608:9: note: expected 'LPC_UART_TypeDef * {aka struct <anonymous> *}' but argument is of type 'LPC_UART0_TypeDef * {aka struct <anonymous> *}'
+ uint8_t UART_GetLineStatus(LPC_UART_TypeDef* UARTx);
+         ^
+In file included from ../src/TestSerial.c:12:0:
+D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\inc/LPC17xx.h:999:31: warning: passing argument 1 of 'UART_ReceiveByte' from incompatible pointer type [-Wincompatible-pointer-types]
+ #define LPC_UART0             ((LPC_UART0_TypeDef     *) LPC_UART0_BASE    )
+                               ^
+../src/TestSerial.c:181:36: note: in expansion of macro 'LPC_UART0'
+    rxBuffer3[k] = UART_ReceiveByte(LPC_UART0);
+                                    ^
+In file included from ../src/TestSerial.c:16:0:
+D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\inc/lpc17xx_uart.h:596:9: note: expected 'LPC_UART_TypeDef * {aka struct <anonymous> *}' but argument is of type 'LPC_UART0_TypeDef * {aka struct <anonymous> *}'
+ uint8_t UART_ReceiveByte(LPC_UART_TypeDef* UARTx);
+         ^
+../src/TestSerial.c:144:10: warning: variable 'rxBuffer3' set but not used [-Wunused-but-set-variable]
+  uint8_t rxBuffer3[30];
+          ^
+../src/TestSerial.c:143:10: warning: variable 'rxBuffer2' set but not used [-Wunused-but-set-variable]
+  uint8_t rxBuffer2[30];
+          ^
+Finished building: ../src/TestSerial.c
+ 
+Building target: TestSerial.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug" -Xlinker -Map="TestSerial.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -mcpu=cortex-m3 -mthumb -T "TestSerial_Debug.ld" -o "TestSerial.axf"  ./src/TestSerial.o ./src/cr_startup_lpc175x_6x.o ./src/crp.o   -lCMSIS_CORE_LPC17xx
+Memory region         Used Size  Region Size  %age Used
+       MFlash512:       13748 B       512 KB      2.62%
+        RamLoc32:         340 B        32 KB      1.04%
+        RamAHB32:          0 GB        32 KB      0.00%
+Finished building target: TestSerial.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "TestSerial.axf"; # arm-none-eabi-objcopy -v -O binary "TestSerial.axf" "TestSerial.bin" ; # checksum -p LPC1769 -d "TestSerial.bin";
+   text	   data	    bss	    dec	    hex	filename
+  13744	      4	    336	  14084	   3704	TestSerial.axf
+ 
+
+16:33:31 Build Finished (took 1s.31ms)
+

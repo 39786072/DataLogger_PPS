@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project>
+	<configuration id="com.crt.advproject.config.exe.debug.1209055900" name="Debug">
+		<extension point="org.eclipse.cdt.core.LanguageSettingsProvider">
+			<provider id="com.crt.advproject.GCCBuildCommandParser">
+				<language id="org.eclipse.cdt.core.gcc">
+					<resource project-relative-path="src/tasks/switch_ea-sw3_1769_003-0_c13a.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_i2c.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/crp.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/usbinit.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/cr_startup_lpc176x.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_nvic.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/bertrik_sikken/lpcusb.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_systick.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_libcfg_default.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_qei.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_wdt.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_gpdma.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_can.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/tasks/menu_1769_003-0_c13a.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_timer.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_spi.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_gpio.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/scheduler/ttc_sch_1769_003-0_c02a.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/bertrik_sikken/serial_fifo.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_dac.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/usbstdreq.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/main/main.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_pinsel.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_pwm.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/usbcontrol.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/tasks/heartbeat_1769_003-0_c02a.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_clkpwr.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_iap.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_uart.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_adc.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_mcpwm.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/tasks/spi_7_seg_display_1769_003-0_c13a.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_i2s.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/cr_startup_lpc175x_6x.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/system_mode/system_mode_1769_003-0_c13a.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/usbhw_lpc.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_rtc.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_exti.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_rit.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_ssp.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/tasks/watchdog_1769_003-0_c02a.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/system_tests/system_test_mcu_temperature_1769_003-0_c13a.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/TestTTRD13a.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+					<resource project-relative-path="src/arm-nxp/lpc17xx_emac.c">
+						<entry kind="includePath" name="/${ProjName}/inc">
+							<flag value="VALUE_WORKSPACE_PATH"/>
+						</entry>
+						<entry kind="includePath" name="/CMSIS_CORE_LPC17xx/inc">
+							<flag value="VALUE_WORKSPACE_PATH|RESOLVED"/>
+						</entry>
+						<entry kind="macro" name="CORE_M3" value=""/>
+						<entry kind="macro" name="DEBUG" value=""/>
+						<entry kind="macro" name="__CODE_RED" value=""/>
+						<entry kind="macro" name="__LPC17XX__" value=""/>
+						<entry kind="macro" name="__REDLIB__" value=""/>
+						<entry kind="macro" name="__USE_CMSIS" value="CMSIS_CORE_LPC17xx"/>
+					</resource>
+				</language>
+			</provider>
+		</extension>
+	</configuration>
+</project>
