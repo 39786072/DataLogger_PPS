@@ -8,6 +8,7 @@ C_SRCS += \
 ../tasks/led.c \
 ../tasks/ptt.c \
 ../tasks/watchdog_1769_003-0_c02a.c \
+../tasks/weather_station.c \
 ../tasks/wifi_esp8266.c 
 
 OBJS += \
@@ -15,6 +16,7 @@ OBJS += \
 ./tasks/led.o \
 ./tasks/ptt.o \
 ./tasks/watchdog_1769_003-0_c02a.o \
+./tasks/weather_station.o \
 ./tasks/wifi_esp8266.o 
 
 C_DEPS += \
@@ -22,6 +24,7 @@ C_DEPS += \
 ./tasks/led.d \
 ./tasks/ptt.d \
 ./tasks/watchdog_1769_003-0_c02a.d \
+./tasks/weather_station.d \
 ./tasks/wifi_esp8266.d 
 
 

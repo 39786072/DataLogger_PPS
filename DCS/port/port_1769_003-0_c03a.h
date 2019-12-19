@@ -71,14 +71,14 @@
 #define MODE1_LED_PORT (2)
 #define MODE1_LED_PIN (0b100) //LED 1 AZUL
 
-#define ERROR0_LED_PORT (2)
-#define ERROR0_LED_PIN (0b1000) //LED 2 ROJO
+#define LED2R_PORT (2)
+#define LED2R_PIN (0b1000) //LED 2 ROJO
 
-#define ERROR1_LED_PORT (2)
-#define ERROR1_LED_PIN (0b10000) //LED 2 VERDE
+#define LED2G_PORT (2)
+#define LED2G_PIN (0b10000) //LED 2 VERDE
 
-#define ERROR2_LED_PORT (2)
-#define ERROR2_LED_PIN (0b100000) //LED 2 AZUL
+#define LED2B_PORT (2)
+#define LED2B_PIN (0b100000) //LED 2 AZUL
 
 #define E_WIFI_PORT (0)
 #define E_WIFI_PIN (0b1000000000000000000) //Enable Wifi

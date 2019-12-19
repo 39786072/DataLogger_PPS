@@ -117,7 +117,7 @@ static void WIFI_Send(uint16_t length) {
 }
 void WIFI_Init() {
 	GPIO_SetDir(E_WIFI_PORT, E_WIFI_PIN, 1);
-    GPIO_ClearValue(HEARTBEAT_LED_PORT, HEARTBEAT_LED_PIN);
+	GPIO_SetValue(E_WIFI_PORT, E_WIFI_PIN);
 	UART_Configure(LPC_UART3, 115200);
 }
 static uint8_t WIFI_Make_HTTP(uint8_t * Variable_Name, int16_t Value,

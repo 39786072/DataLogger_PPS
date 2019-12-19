@@ -169,8 +169,8 @@ void SYSTEM_Configure_Required_Mode(void)
          HEARTBEAT_Init();
 
          //Prepare WiFi
-         WIFI_Init();
          Buffer_Init();
+         WIFI_Init();
          LED_Init();
          // Prepare to read START switch
          //SWITCH_SW3_Init();
@@ -264,6 +264,7 @@ void SYSTEM_Perform_Safe_Shutdown(void)
    Door_lock_required_state_G = UNLOCKED;
 
    */// Rudimentary fault reporting.
+   LED_Init();
    HEARTBEAT_Init();
 
    while(1)
