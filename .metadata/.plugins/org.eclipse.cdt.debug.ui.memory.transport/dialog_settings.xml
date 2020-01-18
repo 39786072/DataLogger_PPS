@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="IMPORT_DIALOG">
+		<item value="0x40024000" key="Start"/>
+		<item value="0x40024000" key="Initial address"/>
+	</section>
+</section>

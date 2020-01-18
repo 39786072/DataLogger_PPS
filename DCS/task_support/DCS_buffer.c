@@ -97,6 +97,7 @@ uint8_t BUFFER_Pop(Buffer_type index) {
 }
 void BUFFER_Flush(Buffer_type index)
 {
+	Buffer.B[index][0] = '\0';
 	Buffer.Read_pointer[index] = 0;
 	Buffer.Write_pointer[index] = 0;
 }

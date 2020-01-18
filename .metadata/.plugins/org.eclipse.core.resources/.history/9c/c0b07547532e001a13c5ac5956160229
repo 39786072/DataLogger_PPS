@@ -1,0 +1,31 @@
+/*
+ * rtc.c
+ *
+ *  Created on: 2 de ene. de 2020
+ *      Author: Santiago
+ */
+
+#include "../task_support/rtc.h"
+
+#include <lpc17xx_rtc.h>
+void RTCInit(void){
+	RTC_Init(LPC_RTC);
+	RTC_Cmd(LPC_RTC,ENABLE);
+}
+void RTCDeInit(void){
+	RTC_Cmd(LPC_RTC,DISABLE);
+	RTC_DeInit(LPC_RTC);
+}
+void RTCSetTime(char * date){
+	//Date: Thu, 02 Jan 2020 23:33:11 GMT
+	LPC_RTC->YEAR = 2020;
+	LPC_RTC->MONTH = 01;
+	LPC_RTC->DOM = 02;
+	LPC_RTC->HOUR= 16;
+	LPC_RTC->MIN = 30;
+	LPC_RTC->SEC = 00;
+
+}
+void RTCGetTime(char * date){
+
+}
