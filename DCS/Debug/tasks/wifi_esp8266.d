@@ -16,7 +16,9 @@ tasks/wifi_esp8266.o tasks/wifi_esp8266.d: ../tasks/wifi_esp8266.c \
  ../tasks/../port/../main/../scheduler/ttc_sch_od_1769_003-0_c02b.h \
  ../tasks/../port/../main/../scheduler/../main/main.h \
  ../tasks/../port/../main/../port/port_1769_003-0_c03a.h \
- ../tasks/../system/system_1769_003-0_c03a.h
+ ../tasks/../system/system_1769_003-0_c03a.h \
+ ../tasks/../task_support/rtc.h \
+ D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\inc/lpc_types.h
 
 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\inc/lpc17xx_uart.h:
 
@@ -57,3 +59,7 @@ D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\inc/lpc17xx.h:
 ../tasks/../port/../main/../port/port_1769_003-0_c03a.h:
 
 ../tasks/../system/system_1769_003-0_c03a.h:
+
+../tasks/../task_support/rtc.h:
+
+D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\inc/lpc_types.h:

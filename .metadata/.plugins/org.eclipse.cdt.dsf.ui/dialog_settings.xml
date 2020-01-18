@@ -3,7 +3,12 @@
 	<section name="org.eclipse.cdt.dsf.debug.internal.ui.ExpressionInformationControlCreator$ExpressionInformationControl">
 		<item value="500" key="SashWeightTree"/>
 		<item value="500" key="SashWeightDetails"/>
+<<<<<<< HEAD
+		<item value="1094" key="WIDTH"/>
+		<item value="481" key="HEIGHT"/>
+=======
 		<item value="1054" key="WIDTH"/>
 		<item value="499" key="HEIGHT"/>
+>>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
 	</section>
 </section>

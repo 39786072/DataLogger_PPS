@@ -149,9 +149,11 @@ int main(void) {
 	printf("Hello World\n");
 	UART_Send(LPC_UART3, ATCWMODE, 13, BLOCKING);
 	UART_SendByte(LPC_UART2, 0x7A);
+
 	UART_SendByte(LPC_UART0, 'D');
 //	printf("EnvioDato");
 	while (1) {
+		UART_SendByte(LPC_UART2, 0x7A);
 		if ((UART_GetLineStatus(LPC_UART3) & 0x1) == 1) {
 			rxBuffer1[i] = UART_ReceiveByte(LPC_UART3);
 			//printf("%c\r\n", rxBuffer1[i]);

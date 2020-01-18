@@ -8,6 +8,10 @@
 #ifndef TASKS_PTT_H_
 #define TASKS_PTT_H_
 
+void PTT_Init(void);
+void PTT_Tx(void);
+void PTT_Rx(void);
+void PTT_Task(void);
 
 
 #endif /* TASKS_PTT_H_ */

@@ -5,14 +5,17 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../task_support/DCS_buffer.c \
+../task_support/rtc.c \
 ../task_support/uart.c 
 
 OBJS += \
 ./task_support/DCS_buffer.o \
+./task_support/rtc.o \
 ./task_support/uart.o 
 
 C_DEPS += \
 ./task_support/DCS_buffer.d \
+./task_support/rtc.d \
 ./task_support/uart.d 
 
 

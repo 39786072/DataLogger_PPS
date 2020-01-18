@@ -59,6 +59,9 @@
 #include "../tasks/wifi_esp8266.h"
 #include "../tasks/led.h"
 #include "../task_support/DCS_buffer.h"
+#include "../tasks/weather_station.h"
+#include "../tasks/ptt.h"
+#include "../task_support/rtc.h"
 /*#include "../tasks/door_lock_1769_003-0_c03a.h"
 #include "../tasks/drum_motor_1769_003-0_c03a.h"
 #include "../tasks/selector_dial_1769_003-0_c03a.h"
@@ -169,9 +172,13 @@ void SYSTEM_Configure_Required_Mode(void)
          HEARTBEAT_Init();
 
          //Prepare WiFi
+         RTCInit();
+         RTCSetTime((uint8_t*)"Thu, 03 Jan 2020 15:10:00 GMT");
          Buffer_Init();
          WIFI_Init();
          LED_Init();
+         WS_Init();
+         PTT_Init();
          // Prepare to read START switch
          //SWITCH_SW3_Init();
 
@@ -199,9 +206,20 @@ void SYSTEM_Configure_Required_Mode(void)
 
          // Add watchdog task first
          SCH_Add_Task(WATCHDOG_Update, 	0, 		1, 	10,	0);
+
          SCH_Add_Task(WIFI_Rx,			0,		1,	20,	0);
          SCH_Add_Task(WIFI_Tx,			1,		1,	20,	0);
          SCH_Add_Task(WIFI_Task,		2000,	20,	100,0);
+
+
+         SCH_Add_Task(WS_Rx,			0,		2,	20,	0);
+         SCH_Add_Task(WS_Tx,			1,		2,	20,	0);
+         SCH_Add_Task(WS_UpdateData,	3000,	20,	100,0);
+
+         SCH_Add_Task(PTT_Rx,			0,		2,	20,	0);
+         SCH_Add_Task(PTT_Tx,			1,		2,	20,	0);
+         SCH_Add_Task(PTT_Task,	10000,	20,	100,0);
+
   /*       // Add task to control door lock
          SCH_Add_Task(DOOR_LOCK_Update, 0, 10, 100, 0);
          // Add tasks to read selector dial, then START switch

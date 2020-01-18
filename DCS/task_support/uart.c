@@ -15,7 +15,7 @@ static void UART_Set_pin(LPC_UART_TypeDef* UART) {
 	PinUartCfg.Pinmode = PINSEL_PINMODE_PULLUP;	// PULLUP, PULLDOWN o TRISTATE
 	PinUartCfg.OpenDrain = PINSEL_PINMODE_NORMAL;	// NORMAL u OPENDRAIN
 
-	if (UART == LPC_UART0) {
+	if (UART == (LPC_UART_TypeDef*)LPC_UART0) {
 		PinUartCfg.Portnum = PINSEL_PORT_0;			// 0 a 3
 		PinUartCfg.Pinnum = PINSEL_PIN_2;			// 0 a 31
 		PinUartCfg.Funcnum = PINSEL_FUNC_1;			// 0 a 3

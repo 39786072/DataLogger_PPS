@@ -10,6 +10,7 @@
 #include "../task_support/uart.h"
 #include "../task_support/DCS_buffer.h"
 #include "../system/system_1769_003-0_c03a.h"
+#include "../port/port_1769_003-0_c03a.h"
 
 typedef enum {
 	Init = 0,Test, Waiting, WaitingFor
@@ -21,7 +22,7 @@ typedef enum {
 	Start = 0x10, Stop = 0x20, StMode = 0x30, LdMode = 0x40, StData = 0x50, LdData = 0x60, Nop = 0x7A, LdInfo = 0x7D
 } Ptt_Commands;
 void PTT_Init() {
-	UART_Configure(LPC_UART2, 9600);
+	UART_Configure(LPC_UART0, 9600);
 }
 
 void PTT_Start()
@@ -89,11 +90,23 @@ void PTT_LdInfo()
 {
 	BUFFER_Push(Ptt_Tx,LdInfo);
 }
+static void PTT_Heartbeat()
+{
+	static uint8_t Ptt_Heartbeat = 0;
+    if (Ptt_Heartbeat == 1){
+    	Ptt_Heartbeat = 0;
+       GPIO_ClearValue(LED2B_PORT, LED2B_PIN);
+    }else{
+    	Ptt_Heartbeat = 1;
+    	GPIO_SetValue(LED2B_PORT, LED2B_PIN);
+    }
+}
 
 
 void PTT_Task() {
 	static Ptt_State Ptt_Current_State;
 	static Ptt_State Ptt_Old_State;
+	PTT_Heartbeat();
 	switch (Ptt_Current_State)
 	{
 		case Init:
@@ -112,11 +125,11 @@ void PTT_Task() {
 void PTT_Tx() {
 	uint8_t aux = BUFFER_Pop(Ptt_Tx);
 	if (aux != (uint8_t) EMPTY_BUFFER_ERROR) {
-		UART_SendByte(LPC_UART2, aux);
+		UART_SendByte(LPC_UART0, aux);
 	}
 }
 void PTT_Rx() {
-	while ((UART_GetLineStatus(LPC_UART2) & 0x1) == 1) {
-		BUFFER_Push(Ptt_Rx, UART_ReceiveByte(LPC_UART2));
+	while ((UART_GetLineStatus(LPC_UART0) & 0x1) == 1) {
+		BUFFER_Push(Ptt_Rx, UART_ReceiveByte(LPC_UART0));
 	}
 }

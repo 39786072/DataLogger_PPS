@@ -181,9 +181,9 @@ typedef enum {
 /* Weather Parameters */
 
 /*===========================================================================*/
-void initData(); /*Initialize structure*/
+void WS_Init(); /*Initialize structure*/
 
-void updateData(); /*Read from WS and store in structure*/
+void WS_UpdateData(); /*Read from WS and store in structure*/
 
 /* Inside Temperature */
 int16_t getCurrentInsideTemperature();
@@ -247,6 +247,11 @@ uint16_t getCurrentBatteryVoltage();
 
 /* Cardinal Point */
 char* cardinalPoint(uint16_t point);
+<<<<<<< HEAD
+void WS_Tx();
+void WS_Rx();
+=======
 
+>>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
 
 #endif /* TASKS_WEATHER_STATION_H_ */

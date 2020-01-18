@@ -11,6 +11,7 @@
 #include "../port/port_1769_003-0_c03a.h"
 #include "lpc17xx_gpio.h"
 #include "../system/system_1769_003-0_c03a.h"
+#include "../task_support/rtc.h"
 #define HEADER_LENGHT 160
 typedef enum {
 	Init = 0,
@@ -25,6 +26,7 @@ typedef enum {
 	WaitingForString,
 	SendData,
 	Close,
+	UpdateRTC,
 	StartConnection
 } Wifi_State;
 
@@ -45,6 +47,8 @@ const uint8_t Wifi_String_ready[6] = { 'r', 'e', 'a', 'd', 'y', '\0' };
 const uint8_t Wifi_String_Send[2] = { '>', '\0' };
 const uint8_t Wifi_String_SendOK[8] =
 		{ 'S', 'E', 'N', 'D', ' ', 'O', 'K', '\0' };
+const uint8_t Wifi_String_Date[7] =
+		{ 'D', 'a', 't', 'e', ':', ' ', '\0' };
 static void WIFI_AT() {
 	BUFFER_Push_String(Wifi_Tx, (uint8_t *) "AT\r\n");
 }
@@ -97,6 +101,10 @@ static void WIFI_Start_Transmision(Wifi_Protocol protocol, uint8_t * host,
 static void WIFI_Close()
 {
 	BUFFER_Push_String(Wifi_Tx, (uint8_t *) "AT+CIPCLOSE\r\n");
+}
+static void WIFI_RST()
+{
+	BUFFER_Push_String(Wifi_Tx, (uint8_t *) "AT+RST\r\n");
 }
 static void WIFI_Send(uint16_t length) {
 	BUFFER_Push_String(Wifi_Tx, (uint8_t *) "AT+CIPSEND=");
@@ -164,6 +172,19 @@ static uint8_t WIFI_Make_HTTP(uint8_t * Variable_Name, int16_t Value,
 	(*String_HTTP) = WIFI_Header;
 	return HTTPLength;
 }
+
+void WiFi_Heartbeat()
+{
+	static uint8_t WiFi_Heartbeat = 0;
+    if (WiFi_Heartbeat == 1){
+    	WiFi_Heartbeat = 0;
+       GPIO_ClearValue(LED2R_PORT, LED2R_PIN);
+    }else{
+    	WiFi_Heartbeat = 1;
+    	GPIO_SetValue(LED2R_PORT, LED2R_PIN);
+    }
+}
+
 void WIFI_Task() {
 	static Wifi_State Wifi_Current_State = Init;
 	static Wifi_State Wifi_Old_State = 0xFF;
@@ -171,16 +192,22 @@ void WIFI_Task() {
 	static uint32_t Wifi_Waiting_Times;
 	static uint8_t Wifi_Waiting_Index;
 	uint8_t auxChar;
+	uint8_t auxDateString[25];
 	static uint8_t * HTTP;
+	WiFi_Heartbeat();
 	switch (Wifi_Current_State) {
 	case Init:
 		if (Wifi_Old_State == Waiting) {
 			Wifi_Old_State = Init;
 			Wifi_Current_State = Test;
 		} else {
-			Wifi_Waiting_Times = 500;
+			BUFFER_Flush(Wifi_Rx);
+			//WIFI_RST();
+			Wifi_Waiting_Times = 1000;
+			Wifi_Old_State = Init;
 			Wifi_Current_State = Waiting;
 		}
+	break;
 	case Echo:
 		if (Wifi_Old_State != WaitingForString) {
 			WIFI_Echo(Disable);
@@ -190,6 +217,7 @@ void WIFI_Task() {
 			Wifi_Waiting_Times = 200;
 			Wifi_Current_State = WaitingForString;
 		} else {
+			BUFFER_Flush(Wifi_Rx);
 			Wifi_Old_State = Echo;
 			Wifi_Current_State = Set_Mode;
 		}
@@ -203,6 +231,7 @@ void WIFI_Task() {
 			Wifi_Waiting_Times = 200;
 			Wifi_Current_State = WaitingForString;
 		} else {
+			BUFFER_Flush(Wifi_Rx);
 			Wifi_Old_State = Test;
 			Wifi_Current_State = Echo;
 		}
@@ -218,6 +247,7 @@ void WIFI_Task() {
 			Wifi_Waiting_Times = 30;
 			Wifi_Current_State = WaitingForString;
 		} else {
+			BUFFER_Flush(Wifi_Rx);
 			Wifi_Old_State = Set_Mode;
 			Wifi_Current_State = JoinAP;
 		}
@@ -232,6 +262,7 @@ void WIFI_Task() {
 			Wifi_Waiting_Times = 30;
 			Wifi_Current_State = WaitingForString;
 		} else {
+			BUFFER_Flush(Wifi_Rx);
 			Wifi_Old_State = Set_Connection_Type;
 			Wifi_Current_State = GetIP;
 		}
@@ -246,6 +277,7 @@ void WIFI_Task() {
 			Wifi_Waiting_Times = 500;
 			Wifi_Current_State = WaitingForString;
 		} else {
+			BUFFER_Flush(Wifi_Rx);
 			Wifi_Old_State = JoinAP;
 			Wifi_Current_State = Set_Connection_Type;
 		}
@@ -259,6 +291,7 @@ void WIFI_Task() {
 			Wifi_Waiting_Times = 75;
 			Wifi_Current_State = WaitingForString;
 		} else {
+			BUFFER_Flush(Wifi_Rx);
 			Wifi_Old_State = GetIP;
 			Wifi_Current_State = Running;
 		}
@@ -267,9 +300,11 @@ void WIFI_Task() {
 	case Running:
 		//Verificar si hay nuevos datos que enviar a ubidots y enviarlos
 		if (Wifi_Old_State == Waiting) {
+			BUFFER_Flush(Wifi_Rx);
 			Wifi_Old_State = Running;
 			Wifi_Current_State = StartConnection;
 		} else {
+			BUFFER_Flush(Wifi_Rx);
 			Wifi_Waiting_Times = 500;
 			Wifi_Old_State = Running;
 			Wifi_Current_State = Waiting;
@@ -291,13 +326,12 @@ void WIFI_Task() {
 				}
 			}
 		} else {
-			BUFFER_Flush(Wifi_Rx);
 			Wifi_Current_State = Wifi_Old_State;
 			Wifi_Old_State = WaitingForString;
 		}
 		break;
 	case Waiting:
-
+// Verificar que sigan en el buffer los datos de la fecha
 		if (--Wifi_Waiting_Times <= 0) {
 			Wifi_Current_State = Wifi_Old_State;
 			Wifi_Old_State = Waiting;
@@ -309,9 +343,10 @@ void WIFI_Task() {
 			Wifi_Old_State = StartConnection;
 			Wifi_Required_Text = Wifi_String_OK;
 			Wifi_Waiting_Index = 0;
-			Wifi_Waiting_Times = 150;
+			Wifi_Waiting_Times = 200;
 			Wifi_Current_State = WaitingForString;
 		} else {
+			BUFFER_Flush(Wifi_Rx);
 			Wifi_Old_State = StartConnection;
 			Wifi_Current_State = SendData;
 		}
@@ -325,8 +360,28 @@ void WIFI_Task() {
 			Wifi_Waiting_Times = 200;
 			Wifi_Current_State = WaitingForString;
 		} else {
+			BUFFER_Flush(Wifi_Rx);
 			Wifi_Old_State = Close;
 			Wifi_Current_State = Running;
+		}
+		break;
+	case UpdateRTC:
+		if (Wifi_Old_State != WaitingForString) {
+			Wifi_Old_State = UpdateRTC;
+			Wifi_Required_Text = Wifi_String_Date;
+			Wifi_Waiting_Index = 0;
+			Wifi_Waiting_Times = 200;
+			Wifi_Current_State = WaitingForString;
+
+		} else {
+			for (auxChar = 0; auxChar<25; auxChar++)
+			{
+				auxDateString[auxChar] = BUFFER_Pop(Wifi_Rx);
+			}
+			BUFFER_Flush(Wifi_Rx);
+			RTCSetTime(auxDateString);
+			Wifi_Old_State = UpdateRTC;
+			Wifi_Current_State = Close;
 		}
 		break;
 	case SendData:
@@ -341,7 +396,9 @@ void WIFI_Task() {
 			Wifi_Current_State = WaitingForString;
 			break;
 		case WaitingForString:
+
 			if (Wifi_Required_Text != Wifi_String_SendOK) {
+				BUFFER_Flush(Wifi_Rx);
 				if(BUFFER_Push_String(Wifi_Tx, HTTP) == FULL_BUFFER_ERROR){
 					SYSTEM_Perform_Safe_Shutdown();
 				}
@@ -350,12 +407,18 @@ void WIFI_Task() {
 				Wifi_Waiting_Index = 0;
 				Wifi_Waiting_Times = 250;
 				Wifi_Current_State = WaitingForString;
+
 			}else
 			{
 				Wifi_Old_State = SendData;
-				Wifi_Current_State = Close;
+				Wifi_Current_State = Waiting;
+				Wifi_Waiting_Times = 200;
 			}
 
+			break;
+		case Waiting:
+			Wifi_Old_State = SendData;
+			Wifi_Current_State = UpdateRTC;
 			break;
 		default:
 			SYSTEM_Perform_Safe_Shutdown();
