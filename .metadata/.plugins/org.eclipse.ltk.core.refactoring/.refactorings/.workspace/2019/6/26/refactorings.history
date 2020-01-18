@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;TestSerial/inc/uart.h&apos;" deleteContents="false" description="Delete resource &apos;TestSerial/inc/uart.h&apos;" element1="/TestSerial/inc/uart.h" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1561668470908"/>&#x0A;<refactoring comment="Delete resource &apos;TestSerial/src/uart.c&apos;" deleteContents="false" description="Delete resource &apos;TestSerial/src/uart.c&apos;" element1="/TestSerial/src/uart.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1561668474300"/>
-</session>
