@@ -8923,6 +8923,7 @@ java.net.SocketException: Connection reset by peer: socket write error
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
+<<<<<<< HEAD
 !SESSION 2019-12-19 14:19:04.404 -----------------------------------------------
 eclipse.buildId=unknown
 java.version=1.8.0_65
@@ -10464,3 +10465,5 @@ To terminate debug sessions, first select a debug session in the Debug View and 
 
 !ENTRY org.eclipse.ui 4 4 2020-01-09 19:31:21.516
 !MESSAGE Plugin org.eclipse.cdt.ui, extension org.eclipse.ui.decorators, id org.eclipse.cdt.internal.ui.CustomBuildSettingsDecorator: Unknown extension tag found: decorator
+=======
+>>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5

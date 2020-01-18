@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 19:28:12 **** Incremental Build of configuration Debug for project DCS ****
 make -r all 
 Building file: ../tasks/wifi_esp8266.c
@@ -25,4 +26,11 @@ arm-none-eabi-size "DCS.axf"; # arm-none-eabi-objcopy -v -O binary "DCS.axf" "DC
  
 
 19:28:13 Build Finished (took 1s.94ms)
+=======
+03:34:20 **** Incremental Build of configuration Debug for project DCS ****
+make -r all 
+make: Nothing to be done for `all'.
+
+03:34:20 Build Finished (took 90ms)
+>>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
 

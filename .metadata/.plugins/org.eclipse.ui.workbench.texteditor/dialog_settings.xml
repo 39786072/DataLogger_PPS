@@ -2,20 +2,33 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
+<<<<<<< HEAD
 		<item value="Wifi_Current_State = Wa" key="selection"/>
+=======
+		<item value="Start" key="selection"/>
+>>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+<<<<<<< HEAD
 			<item value="Wifi_Current_State = Wa"/>
 			<item value="flush"/>
 			<item value="LPC_UART"/>
+=======
+>>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
 			<item value="start"/>
 			<item value="ubid"/>
 			<item value="Ini"/>
 			<item value="ini"/>
 			<item value="clos"/>
+<<<<<<< HEAD
+=======
+			<item value="init"/>
+			<item value="pull"/>
+			<item value="send_ok"/>
+>>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
 		</list>
 		<list key="replacehistory">
 		</list>

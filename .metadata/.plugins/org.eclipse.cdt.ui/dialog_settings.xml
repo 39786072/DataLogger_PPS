@@ -13,8 +13,12 @@
 		<item value="false" key="caseSensitive"/>
 		<item value="227191" key="searchFlags"/>
 		<list key="previousPatterns">
+<<<<<<< HEAD
 			<item value="Fault_code_G"/>
 			<item value="fault"/>
+=======
+			<item value="host"/>
+>>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
 		</list>
 	</section>
 	<section name="completion_proposal_size">
