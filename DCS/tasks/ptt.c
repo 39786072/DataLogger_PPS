@@ -35,7 +35,7 @@ void PTT_Stop()
 }
 void PTT_StMode(uint8_t buffer, uint8_t autorepeat)
 {
-	BUFFER_Push(Ptt_Tx,StMode | buffer < 1 | autorepeat);
+	BUFFER_Push(Ptt_Tx,StMode | (buffer < 1) | autorepeat);
 }
 void PTT_LdMode()
 {

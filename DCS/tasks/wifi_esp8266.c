@@ -244,7 +244,7 @@ void WIFI_Task() {
 			Wifi_Old_State = Set_Mode;
 			Wifi_Required_Text = Wifi_String_OK;
 			Wifi_Waiting_Index = 0;
-			Wifi_Waiting_Times = 30;
+			Wifi_Waiting_Times = 100;
 			Wifi_Current_State = WaitingForString;
 		} else {
 			BUFFER_Flush(Wifi_Rx);
@@ -259,7 +259,7 @@ void WIFI_Task() {
 			Wifi_Old_State = Set_Connection_Type;
 			Wifi_Required_Text = Wifi_String_OK;
 			Wifi_Waiting_Index = 0;
-			Wifi_Waiting_Times = 30;
+			Wifi_Waiting_Times = 100;
 			Wifi_Current_State = WaitingForString;
 		} else {
 			BUFFER_Flush(Wifi_Rx);
@@ -270,7 +270,7 @@ void WIFI_Task() {
 
 	case JoinAP:
 		if (Wifi_Old_State != WaitingForString) {
-			WIFI_Join_AP((uint8_t*) "DCS", (uint8_t*) "gridcomd");
+			WIFI_Join_AP((uint8_t*) "Melasoba", (uint8_t*) "penerguido");
 			Wifi_Old_State = JoinAP;
 			Wifi_Required_Text = Wifi_String_OK;
 			Wifi_Waiting_Index = 0;
@@ -288,7 +288,7 @@ void WIFI_Task() {
 			Wifi_Old_State = GetIP;
 			Wifi_Required_Text = Wifi_String_OK;
 			Wifi_Waiting_Index = 0;
-			Wifi_Waiting_Times = 75;
+			Wifi_Waiting_Times = 100;
 			Wifi_Current_State = WaitingForString;
 		} else {
 			BUFFER_Flush(Wifi_Rx);

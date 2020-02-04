@@ -209,7 +209,7 @@ void SYSTEM_Configure_Required_Mode(void)
 
          SCH_Add_Task(WIFI_Rx,			0,		1,	20,	0);
          SCH_Add_Task(WIFI_Tx,			1,		1,	20,	0);
-         SCH_Add_Task(WIFI_Task,		2000,	20,	100,0);
+         SCH_Add_Task(WIFI_Task,		2000,	30,	100,0);
 
 
          SCH_Add_Task(WS_Rx,			0,		2,	20,	0);

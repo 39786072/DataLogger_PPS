@@ -42,15 +42,22 @@ static const uint8_t ws_command [WEATHER_DATA - 1][2] = {
 											{WCR_DAILY_RAIN},
 											{WCR_YEARLY_RAIN},
 											};
+static void WS_Heartbeat()
+{
+	static uint8_t Ws_Heartbeat = 0;
+    if (Ws_Heartbeat == 1){
+    	Ws_Heartbeat = 0;
+       GPIO_ClearValue(LED2G_PORT, LED2G_PIN);
+    }else{
+    	Ws_Heartbeat = 1;
+    	GPIO_SetValue(LED2G_PORT, LED2G_PIN);
+    }
+}
 /**
  * @brief   Inits internal data structure
  * @return  Nothing
  */
-<<<<<<< HEAD
 void WS_Init(){
-=======
-void initData(){
->>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
 	/* Internal variables */
 	uint8_t i, j;
 	for(i=0;i<WEATHER_DATA;i++){
@@ -62,11 +69,7 @@ void initData(){
 		}
 	}
 	samples=0;
-<<<<<<< HEAD
 	UART_Configure(LPC_UART2, 2400);
-=======
-	UART_Configure(LPC_UART0, 2400);
->>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
 	ActualState = SendCommand;
 	ActualField=0;
 }
@@ -77,20 +80,12 @@ void initData(){
  * @brief   Updates internal data structure
  * @return  Nothing
  */
-<<<<<<< HEAD
 void WS_UpdateData(){
 	WS_Heartbeat();
 	switch(ActualState)
 	{
 	case SendCommand:
 		BUFFER_Flush(Ws_Rx);
-=======
-void updateData(){
-
-	switch(ActualState)
-	{
-	case SendCommand:
->>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
 		BUFFER_Push_String(Ws_Tx,(uint8_t*)"WRD");
 		BUFFER_Push(Ws_Tx,ws_command[ActualField][0]);
 		BUFFER_Push(Ws_Tx,ws_command[ActualField][1]);
@@ -121,14 +116,9 @@ void updateData(){
 				if (++StateCounter >= (((ws_command[ActualField][0]>>4) + 1)/2))
 				{
 					weather_data[ActualField][CURRENT_DATA] = data;
-<<<<<<< HEAD
 					ActualField++;
 					ActualState = SendCommand;
 					if (ActualField == WEATHER_DATA-1)
-=======
-					ActualState++;
-					if (ActualState == WEATHER_DATA)
->>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
 					{
 						ActualState = Wait;
 					}
@@ -144,22 +134,6 @@ void updateData(){
 
 }
 
-<<<<<<< HEAD
-void WS_Heartbeat()
-{
-	static uint8_t Ws_Heartbeat = 0;
-    if (Ws_Heartbeat == 1){
-    	Ws_Heartbeat = 0;
-       GPIO_ClearValue(LED2G_PORT, LED2G_PIN);
-    }else{
-    	Ws_Heartbeat = 1;
-    	GPIO_SetValue(LED2G_PORT, LED2G_PIN);
-    }
-}
-
-
-=======
->>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
 
 
 /**
@@ -517,7 +491,6 @@ uint16_t getCurrentYearlyRain(){
 uint16_t getCurrentBatteryVoltage(){
 	return weather_data[BATTERY_VOLTAGE][CURRENT_DATA];
 }
-<<<<<<< HEAD
 void WS_Tx() {
 	uint8_t aux = BUFFER_Pop(Ws_Tx);
 	if (aux != (uint8_t) EMPTY_BUFFER_ERROR) {
@@ -532,5 +505,4 @@ void WS_Rx() {
 		}
 	}
 }
-=======
->>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
+

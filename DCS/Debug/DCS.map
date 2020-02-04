@@ -242,7 +242,6 @@ Discarded input sections
  .group         0x00000000        0x8 ./tasks/weather_station.o
  .group         0x00000000        0x8 ./tasks/weather_station.o
  .group         0x00000000        0x8 ./tasks/weather_station.o
-<<<<<<< HEAD
  .group         0x00000000        0x8 ./tasks/weather_station.o
  .group         0x00000000        0x8 ./tasks/weather_station.o
  .group         0x00000000        0x8 ./tasks/weather_station.o
@@ -252,31 +251,6 @@ Discarded input sections
  .bss           0x00000000        0x0 ./tasks/weather_station.o
  .bss.MEFCounter
                 0x00000000        0x2 ./tasks/weather_station.o
-=======
- .text          0x00000000        0x0 ./tasks/weather_station.o
- .data          0x00000000        0x0 ./tasks/weather_station.o
- .bss           0x00000000        0x0 ./tasks/weather_station.o
- .bss.weather_data
-                0x00000000       0x78 ./tasks/weather_station.o
- .bss.samples   0x00000000        0x4 ./tasks/weather_station.o
- .bss.ActualField
-                0x00000000        0x1 ./tasks/weather_station.o
- .bss.ActualState
-                0x00000000        0x1 ./tasks/weather_station.o
- .bss.StateCounter
-                0x00000000        0x1 ./tasks/weather_station.o
- .bss.MEFCounter
-                0x00000000        0x2 ./tasks/weather_station.o
- .bss.data      0x00000000        0x2 ./tasks/weather_station.o
- .bss.aux       0x00000000        0x1 ./tasks/weather_station.o
- .rodata.ws_command
-                0x00000000       0x16 ./tasks/weather_station.o
- .text.initData
-                0x00000000       0x94 ./tasks/weather_station.o
- .rodata        0x00000000        0x4 ./tasks/weather_station.o
- .text.updateData
-                0x00000000      0x16c ./tasks/weather_station.o
->>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
  .text.getCurrentInsideTemperature
                 0x00000000       0x18 ./tasks/weather_station.o
  .text.getAverageInsideTemperature
@@ -349,24 +323,10 @@ Discarded input sections
                 0x00000000       0x18 ./tasks/weather_station.o
  .text.getCurrentBatteryVoltage
                 0x00000000       0x18 ./tasks/weather_station.o
-<<<<<<< HEAD
-=======
- .debug_info    0x00000000      0x7c5 ./tasks/weather_station.o
- .debug_abbrev  0x00000000      0x1bb ./tasks/weather_station.o
- .debug_aranges
-                0x00000000      0x148 ./tasks/weather_station.o
- .debug_ranges  0x00000000      0x138 ./tasks/weather_station.o
- .debug_macro   0x00000000       0xd7 ./tasks/weather_station.o
->>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
  .debug_macro   0x00000000      0x898 ./tasks/weather_station.o
  .debug_macro   0x00000000       0x10 ./tasks/weather_station.o
  .debug_macro   0x00000000      0x12d ./tasks/weather_station.o
  .debug_macro   0x00000000      0x5b2 ./tasks/weather_station.o
-<<<<<<< HEAD
-=======
- .debug_macro   0x00000000       0x60 ./tasks/weather_station.o
- .debug_macro   0x00000000      0x242 ./tasks/weather_station.o
->>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
  .debug_macro   0x00000000       0x1c ./tasks/weather_station.o
  .debug_macro   0x00000000       0x3a ./tasks/weather_station.o
  .debug_macro   0x00000000       0x2d ./tasks/weather_station.o
@@ -376,19 +336,10 @@ Discarded input sections
  .debug_macro   0x00000000      0x146 ./tasks/weather_station.o
  .debug_macro   0x00000000       0x52 ./tasks/weather_station.o
  .debug_macro   0x00000000       0x46 ./tasks/weather_station.o
-<<<<<<< HEAD
  .debug_macro   0x00000000       0x82 ./tasks/weather_station.o
  .debug_macro   0x00000000       0x34 ./tasks/weather_station.o
  .debug_macro   0x00000000       0x52 ./tasks/weather_station.o
  .debug_macro   0x00000000       0x64 ./tasks/weather_station.o
-=======
- .debug_line    0x00000000      0x54c ./tasks/weather_station.o
- .debug_str     0x00000000     0xc798 ./tasks/weather_station.o
- .comment       0x00000000       0x6f ./tasks/weather_station.o
- .debug_frame   0x00000000      0x4e8 ./tasks/weather_station.o
- .ARM.attributes
-                0x00000000       0x33 ./tasks/weather_station.o
->>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
  .group         0x00000000        0x8 ./tasks/wifi_esp8266.o
  .group         0x00000000        0x8 ./tasks/wifi_esp8266.o
  .group         0x00000000        0x8 ./tasks/wifi_esp8266.o
@@ -1163,11 +1114,7 @@ END GROUP
                 0x20084000                __top_RamAHB32 = 0x20084000
                 0x20084000                __top_RAM2 = 0x20084000
 
-<<<<<<< HEAD
-.text           0x00000000     0x2ccc
-=======
-.text           0x00000000     0x2488
->>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
+.text           0x00000000     0x2cd4
  FILL mask 0xff
                 0x00000000                __vectors_start__ = ABSOLUTE (.)
  *(.isr_vector)
@@ -1176,17 +1123,10 @@ END GROUP
                 0x000000cc                . = ALIGN (0x4)
                 0x000000cc                __section_table_start = .
                 0x000000cc                __data_section_table = .
-<<<<<<< HEAD
-                0x000000cc        0x4 LONG 0x2ccc LOADADDR (.data)
+                0x000000cc        0x4 LONG 0x2cd4 LOADADDR (.data)
                 0x000000d0        0x4 LONG 0x10000000 ADDR (.data)
                 0x000000d4        0x4 LONG 0xd0 SIZEOF (.data)
-                0x000000d8        0x4 LONG 0x2ccc LOADADDR (.data_RAM2)
-=======
-                0x000000cc        0x4 LONG 0x2488 LOADADDR (.data)
-                0x000000d0        0x4 LONG 0x10000000 ADDR (.data)
-                0x000000d4        0x4 LONG 0xd0 SIZEOF (.data)
-                0x000000d8        0x4 LONG 0x2488 LOADADDR (.data_RAM2)
->>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
+                0x000000d8        0x4 LONG 0x2cd4 LOADADDR (.data_RAM2)
                 0x000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
                 0x000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
                 0x000000e4                __data_section_table_end = .
@@ -1270,20 +1210,18 @@ END GROUP
  .text.PTT_Rx   0x00000400       0x30 ./tasks/ptt.o
                 0x00000400                PTT_Rx
  .text.WATCHDOG_Init
-<<<<<<< HEAD
                 0x00000430       0x84 ./tasks/watchdog_1769_003-0_c02a.o
                 0x00000430                WATCHDOG_Init
  .text.WATCHDOG_Update
                 0x000004b4       0x20 ./tasks/watchdog_1769_003-0_c02a.o
                 0x000004b4                WATCHDOG_Update
- .text.WS_Init  0x000004d4       0x94 ./tasks/weather_station.o
-                0x000004d4                WS_Init
- .text.WS_UpdateData
-                0x00000568      0x17c ./tasks/weather_station.o
-                0x00000568                WS_UpdateData
  .text.WS_Heartbeat
-                0x000006e4       0x34 ./tasks/weather_station.o
-                0x000006e4                WS_Heartbeat
+                0x000004d4       0x34 ./tasks/weather_station.o
+ .text.WS_Init  0x00000508       0x94 ./tasks/weather_station.o
+                0x00000508                WS_Init
+ .text.WS_UpdateData
+                0x0000059c      0x17c ./tasks/weather_station.o
+                0x0000059c                WS_UpdateData
  .text.WS_Tx    0x00000718       0x2c ./tasks/weather_station.o
                 0x00000718                WS_Tx
  .text.WS_Rx    0x00000744       0x38 ./tasks/weather_station.o
@@ -1517,234 +1455,12 @@ END GROUP
                 0x00002b24        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_write.o)
                 0x00002b24                __sys_write
                 0x00002b24                __write
-=======
-                0x00000358       0x84 ./tasks/watchdog_1769_003-0_c02a.o
-                0x00000358                WATCHDOG_Init
- .text.WATCHDOG_Update
-                0x000003dc       0x20 ./tasks/watchdog_1769_003-0_c02a.o
-                0x000003dc                WATCHDOG_Update
- .text.WIFI_AT  0x000003fc       0x14 ./tasks/wifi_esp8266.o
- .text.WIFI_Echo
-                0x00000410       0x38 ./tasks/wifi_esp8266.o
- .text.WIFI_Get_IP
-                0x00000448       0x14 ./tasks/wifi_esp8266.o
- .text.WIFI_Set_Mode
-                0x0000045c       0x38 ./tasks/wifi_esp8266.o
- .text.WIFI_Set_Connection_Type
-                0x00000494       0x38 ./tasks/wifi_esp8266.o
- .text.WIFI_Join_AP
-                0x000004cc       0x48 ./tasks/wifi_esp8266.o
- .text.WIFI_Start_Transmision
-                0x00000514       0x78 ./tasks/wifi_esp8266.o
- .text.WIFI_Close
-                0x0000058c       0x14 ./tasks/wifi_esp8266.o
- .text.WIFI_Send
-                0x000005a0       0xcc ./tasks/wifi_esp8266.o
- .text.WIFI_Init
-                0x0000066c       0x2c ./tasks/wifi_esp8266.o
-                0x0000066c                WIFI_Init
- .text.WIFI_Make_HTTP
-                0x00000698      0x1c8 ./tasks/wifi_esp8266.o
- .text.WIFI_Task
-                0x00000860      0x418 ./tasks/wifi_esp8266.o
-                0x00000860                WIFI_Task
- .text.WIFI_Tx  0x00000c78       0x2c ./tasks/wifi_esp8266.o
-                0x00000c78                WIFI_Tx
- .text.WIFI_Rx  0x00000ca4       0x38 ./tasks/wifi_esp8266.o
-                0x00000ca4                WIFI_Rx
- .text.Buffer_Init
-                0x00000cdc       0x60 ./task_support/DCS_buffer.o
-                0x00000cdc                Buffer_Init
- .text.BUFFER_Push
-                0x00000d3c       0x70 ./task_support/DCS_buffer.o
-                0x00000d3c                BUFFER_Push
- .text.BUFFER_Push_String
-                0x00000dac       0x40 ./task_support/DCS_buffer.o
-                0x00000dac                BUFFER_Push_String
- .text.BUFFER_Pop
-                0x00000dec       0x98 ./task_support/DCS_buffer.o
-                0x00000dec                BUFFER_Pop
- .text.BUFFER_Flush
-                0x00000e84       0x30 ./task_support/DCS_buffer.o
-                0x00000e84                BUFFER_Flush
- .text.UART_Set_pin
-                0x00000eb4       0x94 ./task_support/uart.o
- .text.UART_Configure
-                0x00000f48       0x48 ./task_support/uart.o
-                0x00000f48                UART_Configure
- .text.SYSTEM_Init
-                0x00000f90       0x10 ./system/system_1769_003-0_c03a.o
-                0x00000f90                SYSTEM_Init
- .text.SYSTEM_Identify_Required_Mode
-                0x00000fa0       0x4c ./system/system_1769_003-0_c03a.o
-                0x00000fa0                SYSTEM_Identify_Required_Mode
- .text.SYSTEM_Configure_Required_Mode
-                0x00000fec       0xb0 ./system/system_1769_003-0_c03a.o
-                0x00000fec                SYSTEM_Configure_Required_Mode
- .text.SYSTEM_Perform_Safe_Shutdown
-                0x0000109c       0x38 ./system/system_1769_003-0_c03a.o
-                0x0000109c                SYSTEM_Perform_Safe_Shutdown
- .text.NVIC_SetPriority
-                0x000010d4       0x54 ./scheduler/ttc_sch_od_1769_003-0_c02b.o
- .text.SysTick_Config
-                0x00001128       0x44 ./scheduler/ttc_sch_od_1769_003-0_c02b.o
- .text.SCH_Init
-                0x0000116c       0x90 ./scheduler/ttc_sch_od_1769_003-0_c02b.o
-                0x0000116c                SCH_Init
- .text.SCH_Start
-                0x000011fc       0x28 ./scheduler/ttc_sch_od_1769_003-0_c02b.o
-                0x000011fc                SCH_Start
- .text.SysTick_Handler
-                0x00001224       0x30 ./scheduler/ttc_sch_od_1769_003-0_c02b.o
-                0x00001224                SysTick_Handler
- .text.SCH_Dispatch_Tasks
-                0x00001254      0x110 ./scheduler/ttc_sch_od_1769_003-0_c02b.o
-                0x00001254                SCH_Dispatch_Tasks
- .text.SCH_Add_Task
-                0x00001364       0xdc ./scheduler/ttc_sch_od_1769_003-0_c02b.o
-                0x00001364                SCH_Add_Task
- .text.SCH_Go_To_Sleep
-                0x00001440       0x10 ./scheduler/ttc_sch_od_1769_003-0_c02b.o
- .text.main     0x00001450       0x14 ./main/main.o
-                0x00001450                main
- .text.GPIO_SetDir
-                0x00001464       0x24 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
-                0x00001464                GPIO_SetDir
- .text.GPIO_SetValue
-                0x00001488       0x14 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
-                0x00001488                GPIO_SetValue
- .text.GPIO_ClearValue
-                0x0000149c       0x14 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
-                0x0000149c                GPIO_ClearValue
- .text.GPIO_ReadValue
-                0x000014b0       0x18 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
-                0x000014b0                GPIO_ReadValue
- .text.PINSEL_ConfigPin
-                0x000014c8       0xa0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
-                0x000014c8                PINSEL_ConfigPin
- .text.UART_Init
-                0x00001568      0x2e8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
-                0x00001568                UART_Init
- .text.UART_SendByte
-                0x00001850       0x3c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
-                0x00001850                UART_SendByte
- .text.UART_ReceiveByte
-                0x0000188c       0x3c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
-                0x0000188c                UART_ReceiveByte
- .text.UART_GetLineStatus
-                0x000018c8       0x3c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
-                0x000018c8                UART_GetLineStatus
- .text.UART_TxCmd
-                0x00001904       0x64 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
-                0x00001904                UART_TxCmd
- .text.SystemInit
-                0x00001968       0xe4 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
-                0x00001968                SystemInit
- .text.CLKPWR_GetPCLKSEL
-                0x00001a4c       0x20 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
-                0x00001a4c                CLKPWR_GetPCLKSEL
- .text.CLKPWR_GetPCLK
-                0x00001a6c       0x28 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
-                0x00001a6c                CLKPWR_GetPCLK
- .text.CLKPWR_ConfigPPWR
-                0x00001a94       0x38 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
-                0x00001a94                CLKPWR_ConfigPPWR
- .text.check_failed
-                0x00001acc        0x2 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
-                0x00001acc                check_failed
- .text.__main   0x00001ace       0x14 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(_cr__main.o)
-                0x00001ace                __CR_SEMIHOST
-                0x00001ace                __main
- *fill*         0x00001ae2        0x2 ff
- .text._initio  0x00001ae4       0xa4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(initio.o)
-                0x00001ae4                _initio
- .text.setvbuf  0x00001b88       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(setvbuf.o)
-                0x00001b88                setvbuf
- .text.memset   0x00001bc8        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(memset.o)
-                0x00001bc8                memset
- .text._deferredlazyseek
-                0x00001bcc       0x44 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_deferredlazyseek.o)
-                0x00001bcc                _deferredlazyseek
- .text._fdopen  0x00001c10       0x6a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_fdopen.o)
-                0x00001c10                _fdopen
- .text._fflush  0x00001c7a       0x58 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_fflush.o)
-                0x00001c7a                _fflush
- *fill*         0x00001cd2        0x2 ff
- .text._Cwritebuf
-                0x00001cd4       0x68 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_writebuf.o)
-                0x00001cd4                _Cwritebuf
- .text.malloc   0x00001d3c       0xc8 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
-                0x00001d3c                malloc
- .text.free     0x00001e04       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
-                0x00001e04                free
- .text._Csys_alloc
-                0x00001e34       0x20 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
-                0x00001e34                _Csys_alloc
- .text.fclose   0x00001e54       0x6c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fclose.o)
-                0x00001e54                fclose
- .text.fflush   0x00001ec0       0x30 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fflush.o)
-                0x00001ec0                fflush
- .text.fseek    0x00001ef0      0x110 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(fseek.o)
-                0x00001ef0                fseek
- .text.ftell    0x00002000       0x4c c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(ftell.o)
-                0x00002000                ftell
- .text.remove   0x0000204c       0x14 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(remove.o)
-                0x0000204c                remove
- .text.strlen   0x00002060       0x4a c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(strlen.o)
-                0x00002060                strlen
- *fill*         0x000020aa        0x2 ff
- .text._sbrk    0x000020ac       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_cr_sbrk.o)
-                0x000020ac                _sbrk
- .text._do_fflush
-                0x000020ec       0x44 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_do_fflush.o)
-                0x000020ec                _do_fflush
- .text.__check_heap_overflow
-                0x00002130       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(_cr_check_heap.o)
-                0x00002130                __check_heap_overflow
- .text.__aeabi_division_uldivmod
-                0x00002148      0x174 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(division_64.o)
-                0x00002148                __aeabi_uldivmod
-                0x0000214c                __bhs_ldivmod1
- .text.__aeabi_division_idiv0
-                0x000022bc        0x2 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(division_idiv0.o)
-                0x000022bc                __aeabi_idiv0
- .text.__aeabi_memset_lowlevel
-                0x000022be       0x32 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/armv7-m\libcr_eabihelpers.a(memcpy.o)
-                0x000022be                __aeabi_lowlevel_memset
- .text.__sys_appexit
-                0x000022f0        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_appexit.o)
-                0x000022f0                __sys_appexit
-                0x000022f0                __exit
- .text.__sys_close
-                0x000022fc        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_close.o)
-                0x000022fc                __sys_close
- .text.__sys_flen
-                0x00002308        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_flen.o)
-                0x00002308                __sys_flen
- .text.__sys_istty
-                0x00002314        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_istty.o)
-                0x00002314                __sys_istty
- .text.__sys_remove
-                0x00002320        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_remove.o)
-                0x00002320                __sys_remove
- .text.__sys_seek
-                0x0000232c        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_seek.o)
-                0x0000232c                __sys_seek
- .text.__sys_tmpnam
-                0x00002338        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_tmpnam.o)
-                0x00002338                __sys_tmpnam
- .text.__sys_write
-                0x00002344        0xc c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(__sys_write.o)
-                0x00002344                __sys_write
-                0x00002344                __write
->>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
  *(.rodata .rodata.* .constdata .constdata.*)
  .rodata.ws_command
                 0x00002b30       0x16 ./tasks/weather_station.o
  *fill*         0x00002b46        0x2 ff
  .rodata        0x00002b48        0x4 ./tasks/weather_station.o
  .rodata.Wifi_String_OK
-<<<<<<< HEAD
                 0x00002b4c        0x5 ./tasks/wifi_esp8266.o
                 0x00002b4c                Wifi_String_OK
  *fill*         0x00002b51        0x3 ff
@@ -1759,106 +1475,52 @@ END GROUP
                 0x00002b60        0x7 ./tasks/wifi_esp8266.o
                 0x00002b60                Wifi_String_Date
  *fill*         0x00002b67        0x1 ff
- .rodata        0x00002b68       0xd8 ./tasks/wifi_esp8266.o
+ .rodata        0x00002b68       0xe0 ./tasks/wifi_esp8266.o
  .rodata.Buffers_Sizes
-                0x00002c40       0x10 ./task_support/DCS_buffer.o
- .rodata        0x00002c50       0x1e ./system/system_1769_003-0_c03a.o
- *fill*         0x00002c6e        0x2 ff
+                0x00002c48       0x10 ./task_support/DCS_buffer.o
+ .rodata        0x00002c58       0x1e ./system/system_1769_003-0_c03a.o
+ *fill*         0x00002c76        0x2 ff
  .rodata.CSWTCH.9
-                0x00002c70       0x14 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+                0x00002c78       0x14 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
  .rodata.str1.1
-                0x00002c84       0x15 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
+                0x00002c8c       0x15 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
  .rodata.str1.1
-                0x00002c99       0x16 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
+                0x00002ca1       0x16 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
  .rodata.str1.1
-                0x00002caf        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(initio.o)
+                0x00002cb7        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(initio.o)
  .rodata.str1.1
-                0x00002cb3       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
-                0x00002ccc                . = ALIGN (0x4)
- *fill*         0x00002ccb        0x1 ff
+                0x00002cbb       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
+                0x00002cd4                . = ALIGN (0x4)
+ *fill*         0x00002cd3        0x1 ff
 
-.glue_7         0x00002ccc        0x0
- .glue_7        0x00002ccc        0x0 linker stubs
+.glue_7         0x00002cd4        0x0
+ .glue_7        0x00002cd4        0x0 linker stubs
 
-.glue_7t        0x00002ccc        0x0
- .glue_7t       0x00002ccc        0x0 linker stubs
+.glue_7t        0x00002cd4        0x0
+ .glue_7t       0x00002cd4        0x0 linker stubs
 
-.vfp11_veneer   0x00002ccc        0x0
- .vfp11_veneer  0x00002ccc        0x0 linker stubs
+.vfp11_veneer   0x00002cd4        0x0
+ .vfp11_veneer  0x00002cd4        0x0 linker stubs
 
-.v4_bx          0x00002ccc        0x0
- .v4_bx         0x00002ccc        0x0 linker stubs
+.v4_bx          0x00002cd4        0x0
+ .v4_bx         0x00002cd4        0x0 linker stubs
 
-.iplt           0x00002ccc        0x0
- .iplt          0x00002ccc        0x0 ./tasks/heartbeat_1769_003-0_c02a.o
+.iplt           0x00002cd4        0x0
+ .iplt          0x00002cd4        0x0 ./tasks/heartbeat_1769_003-0_c02a.o
 
-.rel.dyn        0x00002ccc        0x0
- .rel.iplt      0x00002ccc        0x0 ./tasks/heartbeat_1769_003-0_c02a.o
+.rel.dyn        0x00002cd4        0x0
+ .rel.iplt      0x00002cd4        0x0 ./tasks/heartbeat_1769_003-0_c02a.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00002ccc                __exidx_start = .
+                0x00002cd4                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00002ccc                __exidx_end = .
-                0x00002ccc                _etext = .
+                0x00002cd4                __exidx_end = .
+                0x00002cd4                _etext = .
 
-.data_RAM2      0x2007c000        0x0 load address 0x00002ccc
-=======
-                0x00002350        0x5 ./tasks/wifi_esp8266.o
-                0x00002350                Wifi_String_OK
- *fill*         0x00002355        0x3 ff
- .rodata.Wifi_String_Send
-                0x00002358        0x2 ./tasks/wifi_esp8266.o
-                0x00002358                Wifi_String_Send
- *fill*         0x0000235a        0x2 ff
- .rodata.Wifi_String_SendOK
-                0x0000235c        0x8 ./tasks/wifi_esp8266.o
-                0x0000235c                Wifi_String_SendOK
- .rodata        0x00002364       0xcc ./tasks/wifi_esp8266.o
- .rodata.Buffers_Sizes
-                0x00002430       0x10 ./task_support/DCS_buffer.o
- .rodata.CSWTCH.9
-                0x00002440       0x14 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
- .rodata.str1.1
-                0x00002454       0x16 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
- .rodata.str1.1
-                0x0000246a        0x4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(initio.o)
- .rodata.str1.1
-                0x0000246e       0x18 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(alloc.o)
-                0x00002488                . = ALIGN (0x4)
- *fill*         0x00002486        0x2 ff
-
-.glue_7         0x00002488        0x0
- .glue_7        0x00002488        0x0 linker stubs
-
-.glue_7t        0x00002488        0x0
- .glue_7t       0x00002488        0x0 linker stubs
-
-.vfp11_veneer   0x00002488        0x0
- .vfp11_veneer  0x00002488        0x0 linker stubs
-
-.v4_bx          0x00002488        0x0
- .v4_bx         0x00002488        0x0 linker stubs
-
-.iplt           0x00002488        0x0
- .iplt          0x00002488        0x0 ./tasks/heartbeat_1769_003-0_c02a.o
-
-.rel.dyn        0x00002488        0x0
- .rel.iplt      0x00002488        0x0 ./tasks/heartbeat_1769_003-0_c02a.o
-
-.ARM.extab
- *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00002488                __exidx_start = .
-
-.ARM.exidx
- *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00002488                __exidx_end = .
-                0x00002488                _etext = .
-
-.data_RAM2      0x2007c000        0x0 load address 0x00002488
->>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
+.data_RAM2      0x2007c000        0x0 load address 0x00002cd4
  FILL mask 0xff
                 [!provide]                PROVIDE (__start_data_RAM2, .)
  *(.ramfunc.$RAM2)
@@ -1874,11 +1536,7 @@ END GROUP
                 0x10000000                . = ALIGN (0x4)
                 0x10000000                _end_uninit_RESERVED = .
 
-<<<<<<< HEAD
-.data           0x10000000       0xd0 load address 0x00002ccc
-=======
-.data           0x10000000       0xd0 load address 0x00002488
->>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
+.data           0x10000000       0xd0 load address 0x00002cd4
  FILL mask 0xff
                 0x10000000                _data = .
  *(vtable)
@@ -1895,11 +1553,7 @@ END GROUP
                 0x100000d0                . = ALIGN (0x4)
                 0x100000d0                _edata = .
 
-<<<<<<< HEAD
-.igot.plt       0x100000d0        0x0 load address 0x00002d9c
-=======
-.igot.plt       0x100000d0        0x0 load address 0x00002558
->>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
+.igot.plt       0x100000d0        0x0 load address 0x00002da4
  .igot.plt      0x100000d0        0x0 ./tasks/heartbeat_1769_003-0_c02a.o
 
 .bss_RAM2       0x2007c000        0x0
@@ -1934,7 +1588,7 @@ END GROUP
  .bss.data      0x1000015c        0x2 ./tasks/weather_station.o
  .bss.aux       0x1000015e        0x1 ./tasks/weather_station.o
                 0x1000015e                aux
- .bss.Ws_Heartbeat.5546
+ .bss.Ws_Heartbeat.5526
                 0x1000015f        0x1 ./tasks/weather_station.o
  .bss.WiFi_Heartbeat.5561
                 0x10000160        0x1 ./tasks/wifi_esp8266.o
@@ -2013,49 +1667,49 @@ END GROUP
                 [!provide]                PROVIDE (__valid_user_code_checksum, (0x0 - ((((((_vStackTop + (ResetISR + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
 OUTPUT(DCS.axf elf32-littlearm)
 
-.debug_info     0x00000000     0x7c0a
+.debug_info     0x00000000     0x7bf7
  .debug_info    0x00000000       0xf9 ./tasks/heartbeat_1769_003-0_c02a.o
  .debug_info    0x000000f9       0xab ./tasks/led.o
  .debug_info    0x000001a4      0x49c ./tasks/ptt.o
  .debug_info    0x00000640      0x1cb ./tasks/watchdog_1769_003-0_c02a.o
- .debug_info    0x0000080b      0x838 ./tasks/weather_station.o
- .debug_info    0x00001043      0x79d ./tasks/wifi_esp8266.o
- .debug_info    0x000017e0      0x348 ./task_support/DCS_buffer.o
- .debug_info    0x00001b28      0x4ee ./task_support/rtc.o
- .debug_info    0x00002016      0x567 ./task_support/uart.o
- .debug_info    0x0000257d      0x3a2 ./system/system_1769_003-0_c03a.o
- .debug_info    0x0000291f      0x7e1 ./scheduler/ttc_sch_od_1769_003-0_c02b.o
- .debug_info    0x00003100       0xaf ./main/main.o
- .debug_info    0x000031af      0x28f ./arm-nxp/cr_startup_lpc176x.o
- .debug_info    0x0000343e      0xd70 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
- .debug_info    0x000041ae      0x4e6 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
- .debug_info    0x00004694      0xf35 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
- .debug_info    0x000055c9     0x1bea D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
- .debug_info    0x000071b3      0x318 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
- .debug_info    0x000074cb      0x67c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_info    0x00007b47       0xc3 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_info    0x0000080b      0x825 ./tasks/weather_station.o
+ .debug_info    0x00001030      0x79d ./tasks/wifi_esp8266.o
+ .debug_info    0x000017cd      0x348 ./task_support/DCS_buffer.o
+ .debug_info    0x00001b15      0x4ee ./task_support/rtc.o
+ .debug_info    0x00002003      0x567 ./task_support/uart.o
+ .debug_info    0x0000256a      0x3a2 ./system/system_1769_003-0_c03a.o
+ .debug_info    0x0000290c      0x7e1 ./scheduler/ttc_sch_od_1769_003-0_c02b.o
+ .debug_info    0x000030ed       0xaf ./main/main.o
+ .debug_info    0x0000319c      0x28f ./arm-nxp/cr_startup_lpc176x.o
+ .debug_info    0x0000342b      0xd70 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+ .debug_info    0x0000419b      0x4e6 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
+ .debug_info    0x00004681      0xf35 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
+ .debug_info    0x000055b6     0x1bea D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
+ .debug_info    0x000071a0      0x318 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .debug_info    0x000074b8      0x67c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_info    0x00007b34       0xc3 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
 
-.debug_abbrev   0x00000000     0x1cbc
+.debug_abbrev   0x00000000     0x1cd2
  .debug_abbrev  0x00000000       0xa4 ./tasks/heartbeat_1769_003-0_c02a.o
  .debug_abbrev  0x000000a4       0x6a ./tasks/led.o
  .debug_abbrev  0x0000010e      0x188 ./tasks/ptt.o
  .debug_abbrev  0x00000296      0x104 ./tasks/watchdog_1769_003-0_c02a.o
- .debug_abbrev  0x0000039a      0x1f8 ./tasks/weather_station.o
- .debug_abbrev  0x00000592      0x1fb ./tasks/wifi_esp8266.o
- .debug_abbrev  0x0000078d      0x155 ./task_support/DCS_buffer.o
- .debug_abbrev  0x000008e2      0x151 ./task_support/rtc.o
- .debug_abbrev  0x00000a33      0x16f ./task_support/uart.o
- .debug_abbrev  0x00000ba2      0x147 ./system/system_1769_003-0_c03a.o
- .debug_abbrev  0x00000ce9      0x24c ./scheduler/ttc_sch_od_1769_003-0_c02b.o
- .debug_abbrev  0x00000f35       0x6c ./main/main.o
- .debug_abbrev  0x00000fa1      0x100 ./arm-nxp/cr_startup_lpc176x.o
- .debug_abbrev  0x000010a1      0x234 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
- .debug_abbrev  0x000012d5      0x15e D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
- .debug_abbrev  0x00001433      0x1d8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
- .debug_abbrev  0x0000160b      0x377 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
- .debug_abbrev  0x00001982       0xe6 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
- .debug_abbrev  0x00001a68      0x1e5 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_abbrev  0x00001c4d       0x6f D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_abbrev  0x0000039a      0x20e ./tasks/weather_station.o
+ .debug_abbrev  0x000005a8      0x1fb ./tasks/wifi_esp8266.o
+ .debug_abbrev  0x000007a3      0x155 ./task_support/DCS_buffer.o
+ .debug_abbrev  0x000008f8      0x151 ./task_support/rtc.o
+ .debug_abbrev  0x00000a49      0x16f ./task_support/uart.o
+ .debug_abbrev  0x00000bb8      0x147 ./system/system_1769_003-0_c03a.o
+ .debug_abbrev  0x00000cff      0x24c ./scheduler/ttc_sch_od_1769_003-0_c02b.o
+ .debug_abbrev  0x00000f4b       0x6c ./main/main.o
+ .debug_abbrev  0x00000fb7      0x100 ./arm-nxp/cr_startup_lpc176x.o
+ .debug_abbrev  0x000010b7      0x234 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+ .debug_abbrev  0x000012eb      0x15e D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
+ .debug_abbrev  0x00001449      0x1d8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
+ .debug_abbrev  0x00001621      0x377 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
+ .debug_abbrev  0x00001998       0xe6 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .debug_abbrev  0x00001a7e      0x1e5 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_abbrev  0x00001c63       0x6f D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
 
 .debug_aranges  0x00000000      0x830
  .debug_aranges
@@ -2121,11 +1775,7 @@ OUTPUT(DCS.axf elf32-littlearm)
  .debug_ranges  0x00000748       0x48 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
  .debug_ranges  0x00000790       0x10 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
 
-<<<<<<< HEAD
 .debug_macro    0x00000000     0x52e5
-=======
-.debug_macro    0x00000000     0x42d3
->>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
  .debug_macro   0x00000000       0xf6 ./tasks/heartbeat_1769_003-0_c02a.o
  .debug_macro   0x000000f6      0x898 ./tasks/heartbeat_1769_003-0_c02a.o
  .debug_macro   0x0000098e       0x1c ./tasks/heartbeat_1769_003-0_c02a.o
@@ -2143,7 +1793,6 @@ OUTPUT(DCS.axf elf32-littlearm)
  .debug_macro   0x000020e0       0x64 ./tasks/heartbeat_1769_003-0_c02a.o
  .debug_macro   0x00002144       0x52 ./tasks/heartbeat_1769_003-0_c02a.o
  .debug_macro   0x00002196       0xec ./tasks/led.o
-<<<<<<< HEAD
  .debug_macro   0x00002282      0x11f ./tasks/ptt.o
  .debug_macro   0x000023a1       0x1c ./tasks/ptt.o
  .debug_macro   0x000023bd      0x2c7 ./tasks/ptt.o
@@ -2181,79 +1830,33 @@ OUTPUT(DCS.axf elf32-littlearm)
  .debug_macro   0x000051b0       0x5a D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
  .debug_macro   0x0000520a       0xdb D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
 
-.debug_line     0x00000000     0x503b
+.debug_line     0x00000000     0x503a
  .debug_line    0x00000000      0x3f1 ./tasks/heartbeat_1769_003-0_c02a.o
  .debug_line    0x000003f1      0x389 ./tasks/led.o
  .debug_line    0x0000077a      0x55c ./tasks/ptt.o
  .debug_line    0x00000cd6      0x40a ./tasks/watchdog_1769_003-0_c02a.o
- .debug_line    0x000010e0      0x782 ./tasks/weather_station.o
- .debug_line    0x00001862      0x698 ./tasks/wifi_esp8266.o
- .debug_line    0x00001efa      0x43d ./task_support/DCS_buffer.o
- .debug_line    0x00002337      0x248 ./task_support/rtc.o
- .debug_line    0x0000257f      0x21c ./task_support/uart.o
- .debug_line    0x0000279b      0x4db ./system/system_1769_003-0_c03a.o
- .debug_line    0x00002c76      0x506 ./scheduler/ttc_sch_od_1769_003-0_c02b.o
- .debug_line    0x0000317c      0x34e ./main/main.o
- .debug_line    0x000034ca      0x1f0 ./arm-nxp/cr_startup_lpc176x.o
- .debug_line    0x000036ba      0x3e5 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
- .debug_line    0x00003a9f      0x225 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
- .debug_line    0x00003cc4      0x58a D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
- .debug_line    0x0000424e      0x7d4 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
- .debug_line    0x00004a22      0x212 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
- .debug_line    0x00004c34      0x289 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_line    0x00004ebd      0x17e D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_line    0x000010e0      0x781 ./tasks/weather_station.o
+ .debug_line    0x00001861      0x698 ./tasks/wifi_esp8266.o
+ .debug_line    0x00001ef9      0x43d ./task_support/DCS_buffer.o
+ .debug_line    0x00002336      0x248 ./task_support/rtc.o
+ .debug_line    0x0000257e      0x21c ./task_support/uart.o
+ .debug_line    0x0000279a      0x4db ./system/system_1769_003-0_c03a.o
+ .debug_line    0x00002c75      0x506 ./scheduler/ttc_sch_od_1769_003-0_c02b.o
+ .debug_line    0x0000317b      0x34e ./main/main.o
+ .debug_line    0x000034c9      0x1f0 ./arm-nxp/cr_startup_lpc176x.o
+ .debug_line    0x000036b9      0x3e5 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+ .debug_line    0x00003a9e      0x225 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
+ .debug_line    0x00003cc3      0x58a D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
+ .debug_line    0x0000424d      0x7d4 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
+ .debug_line    0x00004a21      0x212 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+ .debug_line    0x00004c33      0x289 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_line    0x00004ebc      0x17e D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
 
 .debug_str      0x00000000    0x11411
-=======
- .debug_macro   0x00002282      0x104 ./tasks/watchdog_1769_003-0_c02a.o
- .debug_macro   0x00002386       0x70 ./tasks/watchdog_1769_003-0_c02a.o
- .debug_macro   0x000023f6       0x22 ./tasks/watchdog_1769_003-0_c02a.o
- .debug_macro   0x00002418      0x125 ./tasks/wifi_esp8266.o
- .debug_macro   0x0000253d       0xf5 ./task_support/DCS_buffer.o
- .debug_macro   0x00002632       0xac ./task_support/uart.o
- .debug_macro   0x000026de      0x140 ./task_support/uart.o
- .debug_macro   0x0000281e      0x344 ./task_support/uart.o
- .debug_macro   0x00002b62      0x12b ./system/system_1769_003-0_c03a.o
- .debug_macro   0x00002c8d       0xec ./scheduler/ttc_sch_od_1769_003-0_c02b.o
- .debug_macro   0x00002d79       0xec ./main/main.o
- .debug_macro   0x00002e65       0x52 ./arm-nxp/cr_startup_lpc176x.o
- .debug_macro   0x00002eb7       0x99 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
- .debug_macro   0x00002f50      0x88c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
- .debug_macro   0x000037dc       0xe1 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
- .debug_macro   0x000038bd       0x90 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
- .debug_macro   0x0000394d       0xa2 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
- .debug_macro   0x000039ef      0x2fc D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
- .debug_macro   0x00003ceb      0x12d D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
- .debug_macro   0x00003e18       0x90 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_macro   0x00003ea8      0x2f6 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_macro   0x0000419e       0x5a D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
- .debug_macro   0x000041f8       0xdb D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
-
-.debug_line     0x00000000     0x3ae7
- .debug_line    0x00000000      0x3f1 ./tasks/heartbeat_1769_003-0_c02a.o
- .debug_line    0x000003f1      0x389 ./tasks/led.o
- .debug_line    0x0000077a      0x40a ./tasks/watchdog_1769_003-0_c02a.o
- .debug_line    0x00000b84      0x626 ./tasks/wifi_esp8266.o
- .debug_line    0x000011aa      0x43c ./task_support/DCS_buffer.o
- .debug_line    0x000015e6      0x21c ./task_support/uart.o
- .debug_line    0x00001802      0x4aa ./system/system_1769_003-0_c03a.o
- .debug_line    0x00001cac      0x506 ./scheduler/ttc_sch_od_1769_003-0_c02b.o
- .debug_line    0x000021b2      0x34e ./main/main.o
- .debug_line    0x00002500      0x1f0 ./arm-nxp/cr_startup_lpc176x.o
- .debug_line    0x000026f0      0x3e5 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
- .debug_line    0x00002ad5      0x225 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
- .debug_line    0x00002cfa      0x7d4 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
- .debug_line    0x000034ce      0x212 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
- .debug_line    0x000036e0      0x289 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_line    0x00003969      0x17e D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
-
-.debug_str      0x00000000     0xf67f
->>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
  .debug_str     0x00000000     0xa127 ./tasks/heartbeat_1769_003-0_c02a.o
                                0xa1ad (size before relaxing)
  .debug_str     0x0000a127       0x18 ./tasks/led.o
                                0xa13f (size before relaxing)
-<<<<<<< HEAD
  .debug_str     0x0000a13f     0x1ebb ./tasks/ptt.o
                                0xc02a (size before relaxing)
  .debug_str     0x0000bffa      0x3c2 ./tasks/watchdog_1769_003-0_c02a.o
@@ -2289,35 +1892,6 @@ OUTPUT(DCS.axf elf32-littlearm)
  .debug_str     0x00011348       0xa4 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
                                0xabb9 (size before relaxing)
  .debug_str     0x000113ec       0x25 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
-=======
- .debug_str     0x0000a13f      0x3de ./tasks/watchdog_1769_003-0_c02a.o
-                               0xa50e (size before relaxing)
- .debug_str     0x0000a51d     0x2055 ./tasks/wifi_esp8266.o
-                               0xc201 (size before relaxing)
- .debug_str     0x0000c572      0x127 ./task_support/DCS_buffer.o
-                               0xa3a1 (size before relaxing)
- .debug_str     0x0000c699      0x1ba ./task_support/uart.o
-                               0xb7cc (size before relaxing)
- .debug_str     0x0000c853      0x1d8 ./system/system_1769_003-0_c03a.o
-                               0xa789 (size before relaxing)
- .debug_str     0x0000ca2b      0x3ca ./scheduler/ttc_sch_od_1769_003-0_c02b.o
-                               0xa578 (size before relaxing)
- .debug_str     0x0000cdf5       0x14 ./main/main.o
-                               0xa13b (size before relaxing)
- .debug_str     0x0000ce09      0x1b6 ./arm-nxp/cr_startup_lpc176x.o
-                               0x3e3a (size before relaxing)
- .debug_str     0x0000cfbf      0x6ab D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
-                               0x9f2e (size before relaxing)
- .debug_str     0x0000d66a      0x212 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
-                               0x9e2b (size before relaxing)
- .debug_str     0x0000d87c     0x1a5a D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
-                               0xcc22 (size before relaxing)
- .debug_str     0x0000f2d6      0x2e0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
-                               0x99b0 (size before relaxing)
- .debug_str     0x0000f5b6       0xa4 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
-                               0xabb9 (size before relaxing)
- .debug_str     0x0000f65a       0x25 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
->>>>>>> 1a404df1749fa959697d8fd5dab20095e0aca7d5
                                0x3f68 (size before relaxing)
 
 .comment        0x00000000       0xdc
