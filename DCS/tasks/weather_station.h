@@ -149,6 +149,9 @@
 #define NACK							0x21
 #define CR 								0x0d
 
+
+#define WAIT_TIMES						6000
+#define WAIT_DATA_TIMES					100
 /*==================[macros]=================================================*/
 /* Weather Macros */
 

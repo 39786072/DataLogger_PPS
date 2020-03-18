@@ -8,6 +8,10 @@
 #ifndef TASKS_PTT_H_
 #define TASKS_PTT_H_
 
+
+#define WAIT_TIMES						6000
+#define WAIT_DATA_TIMES					100
+
 void PTT_Init(void);
 void PTT_Tx(void);
 void PTT_Rx(void);

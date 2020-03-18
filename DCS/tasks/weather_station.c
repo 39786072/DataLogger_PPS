@@ -24,7 +24,7 @@ static uint32_t samples;
 static WS_Fields ActualField;
 static States ActualState;
 
-static uint8_t StateCounter;
+static uint16_t StateCounter;
 static uint16_t MEFCounter;
 
 static uint16_t data;
@@ -94,9 +94,9 @@ void WS_UpdateData(){
 		StateCounter = 0;
 		break;
 	case WaitForACK:
-		/*if (StateCounter++ > ####) {
+		if (StateCounter++ > WAIT_DATA_TIMES) {
 			SYSTEM_Perform_Safe_Shutdown();
-		}*/
+		}
 			aux = BUFFER_Pop(Ws_Rx);
 			if (aux != EMPTY_BUFFER_ERROR) {
 				if (aux == ACK) {
@@ -107,9 +107,9 @@ void WS_UpdateData(){
 			}
 		break;
 	case WaitForData:
-		/*if (StateCounter++ > ####) {
+		if (StateCounter++ > WAIT_DATA_TIMES) {
 			SYSTEM_Perform_Safe_Shutdown();
-		}*/
+		}
 			aux = BUFFER_Pop(Ws_Rx);
 			if (aux != EMPTY_BUFFER_ERROR) {
 				data = data | (aux<<(8*StateCounter));
@@ -121,11 +121,17 @@ void WS_UpdateData(){
 					if (ActualField == WEATHER_DATA-1)
 					{
 						ActualState = Wait;
+						StateCounter = 0;
 					}
 				}
 			}
 		break;
 	case Wait:
+		if (StateCounter++ >= WAIT_TIMES)
+		{
+			ActualField = 0;
+			ActualState = SendCommand;
+		}
 		break;
 	default:
 		SYSTEM_Perform_Safe_Shutdown();
