@@ -250,7 +250,6 @@ uint16_t getCurrentBatteryVoltage();
 
 /* Cardinal Point */
 char* cardinalPoint(uint16_t point);
-void WS_Tx();
-void WS_Rx();
+void WS_TxRx(void);
 
 #endif /* TASKS_WEATHER_STATION_H_ */

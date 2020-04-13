@@ -8,9 +8,8 @@
 #ifndef TASKS_WIFI_ESP8266_H_
 #define TASKS_WIFI_ESP8266_H_
 
-void WIFI_Init();
-void WIFI_Tx();
-void WIFI_Rx();
-void WIFI_Task();
+void WIFI_Init(void);
+void WIFI_TxRx(void);
+void WIFI_Task(void);
 
 #endif /* TASKS_WIFI_ESP8266_H_ */

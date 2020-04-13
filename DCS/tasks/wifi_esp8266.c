@@ -432,13 +432,11 @@ void WIFI_Task() {
 	}
 
 }
-void WIFI_Tx() {
+void WIFI_TxRx(void) {
 	uint8_t aux = BUFFER_Pop(Wifi_Tx);
 	if (aux != (uint8_t) EMPTY_BUFFER_ERROR) {
 		UART_SendByte(LPC_UART3, aux);
 	}
-}
-void WIFI_Rx() {
 	while ((UART_GetLineStatus(LPC_UART3) & 0x1) == 1) {
 		if (BUFFER_Push(Wifi_Rx, UART_ReceiveByte(LPC_UART3)) == FULL_BUFFER_ERROR)
 		{

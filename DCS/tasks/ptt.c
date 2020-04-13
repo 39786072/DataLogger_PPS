@@ -165,13 +165,11 @@ void PTT_Task() {
 
 }
 
-void PTT_Tx() {
+void PTT_TxRx(void) {
 	uint8_t aux = BUFFER_Pop(Ptt_Tx);
 	if (aux != (uint8_t) EMPTY_BUFFER_ERROR) {
 		UART_SendByte(LPC_UART0, aux);
 	}
-}
-void PTT_Rx() {
 	while ((UART_GetLineStatus(LPC_UART0) & 0x1) == 1) {
 		BUFFER_Push(Ptt_Rx, UART_ReceiveByte(LPC_UART0));
 	}

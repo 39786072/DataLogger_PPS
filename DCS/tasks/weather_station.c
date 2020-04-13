@@ -497,13 +497,11 @@ uint16_t getCurrentYearlyRain(){
 uint16_t getCurrentBatteryVoltage(){
 	return weather_data[BATTERY_VOLTAGE][CURRENT_DATA];
 }
-void WS_Tx() {
+void WS_TxRx(void) {
 	uint8_t aux = BUFFER_Pop(Ws_Tx);
 	if (aux != (uint8_t) EMPTY_BUFFER_ERROR) {
 		UART_SendByte(LPC_UART2, aux);
 	}
-}
-void WS_Rx() {
 	while ((UART_GetLineStatus(LPC_UART2) & 0x1) == 1) {
 		if (BUFFER_Push(Ws_Rx, UART_ReceiveByte(LPC_UART2)) == FULL_BUFFER_ERROR)
 		{
@@ -511,4 +509,3 @@ void WS_Rx() {
 		}
 	}
 }
-

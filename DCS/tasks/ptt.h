@@ -13,8 +13,7 @@
 #define WAIT_DATA_TIMES					100
 
 void PTT_Init(void);
-void PTT_Tx(void);
-void PTT_Rx(void);
+void PTT_TxRx(void);
 void PTT_Task(void);
 
 

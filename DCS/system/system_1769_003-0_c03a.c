@@ -207,18 +207,15 @@ void SYSTEM_Configure_Required_Mode(void)
          // Add watchdog task first
          SCH_Add_Task(WATCHDOG_Update, 	0, 		1, 	10,	0);
 
-         SCH_Add_Task(WIFI_Rx,			0,		1,	20,	0);
-         SCH_Add_Task(WIFI_Tx,			1,		1,	20,	0);
+         SCH_Add_Task(WIFI_TxRx,		0,		1,	20,	0);
          SCH_Add_Task(WIFI_Task,		2000,	30,	100,0);
 
 
-         SCH_Add_Task(WS_Rx,			0,		2,	20,	0);
-         SCH_Add_Task(WS_Tx,			1,		2,	20,	0);
+         SCH_Add_Task(WS_TxRx,			0,		2,	20,	0);
          SCH_Add_Task(WS_UpdateData,	3000,	20,	100,0);
 
-         SCH_Add_Task(PTT_Rx,			0,		2,	20,	0);
-         SCH_Add_Task(PTT_Tx,			1,		2,	20,	0);
-         SCH_Add_Task(PTT_Task,	10000,	20,	100,0);
+         SCH_Add_Task(PTT_TxRx,			0,		2,	20,	0);
+         SCH_Add_Task(PTT_Task,			10000,	20,	100,0);
 
   /*       // Add task to control door lock
          SCH_Add_Task(DOOR_LOCK_Update, 0, 10, 100, 0);
