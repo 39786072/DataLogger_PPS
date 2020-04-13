@@ -1,19 +1,21 @@
 Archive member included to satisfy reference by file (symbol)
 
+D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+                              ./tasks/adc.o (ADC_Init)
+D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+                              D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o) (CLKPWR_GetPCLK)
 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
                               ./tasks/heartbeat_1769_003-0_c02a.o (GPIO_SetDir)
+D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+                              D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o) (check_failed)
 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
-                              ./task_support/uart.o (PINSEL_ConfigPin)
+                              ./tasks/adc.o (PINSEL_ConfigPin)
 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
                               ./task_support/rtc.o (RTC_Init)
 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
                               ./task_support/uart.o (UART_Init)
 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
                               ./arm-nxp/cr_startup_lpc176x.o (SystemInit)
-D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
-                              D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o) (CLKPWR_GetPCLK)
-D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
-                              D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o) (check_failed)
 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(_cr__main.o)
                               ./arm-nxp/cr_startup_lpc176x.o (__main)
 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(initio.o)
@@ -91,6 +93,51 @@ c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/
 
 Discarded input sections
 
+ .group         0x00000000        0x8 ./tasks/adc.o
+ .group         0x00000000        0x8 ./tasks/adc.o
+ .group         0x00000000        0x8 ./tasks/adc.o
+ .group         0x00000000        0x8 ./tasks/adc.o
+ .group         0x00000000        0x8 ./tasks/adc.o
+ .group         0x00000000        0x8 ./tasks/adc.o
+ .group         0x00000000        0x8 ./tasks/adc.o
+ .group         0x00000000        0x8 ./tasks/adc.o
+ .group         0x00000000        0x8 ./tasks/adc.o
+ .group         0x00000000        0x8 ./tasks/adc.o
+ .group         0x00000000        0x8 ./tasks/adc.o
+ .group         0x00000000        0x8 ./tasks/adc.o
+ .text          0x00000000        0x0 ./tasks/adc.o
+ .data          0x00000000        0x0 ./tasks/adc.o
+ .bss           0x00000000        0x0 ./tasks/adc.o
+ .bss.adc_value
+                0x00000000        0x2 ./tasks/adc.o
+ .text.ADC_Task
+                0x00000000       0x3c ./tasks/adc.o
+ .text.ADCt_Init
+                0x00000000       0x50 ./tasks/adc.o
+ .debug_info    0x00000000      0x316 ./tasks/adc.o
+ .debug_abbrev  0x00000000       0xf7 ./tasks/adc.o
+ .debug_aranges
+                0x00000000       0x28 ./tasks/adc.o
+ .debug_ranges  0x00000000       0x18 ./tasks/adc.o
+ .debug_macro   0x00000000       0x99 ./tasks/adc.o
+ .debug_macro   0x00000000      0x898 ./tasks/adc.o
+ .debug_macro   0x00000000       0x1c ./tasks/adc.o
+ .debug_macro   0x00000000       0x3a ./tasks/adc.o
+ .debug_macro   0x00000000       0x10 ./tasks/adc.o
+ .debug_macro   0x00000000      0x12d ./tasks/adc.o
+ .debug_macro   0x00000000      0x5b2 ./tasks/adc.o
+ .debug_macro   0x00000000       0x2d ./tasks/adc.o
+ .debug_macro   0x00000000      0xbb1 ./tasks/adc.o
+ .debug_macro   0x00000000      0x2c7 ./tasks/adc.o
+ .debug_macro   0x00000000       0x66 ./tasks/adc.o
+ .debug_macro   0x00000000       0xe8 ./tasks/adc.o
+ .debug_macro   0x00000000      0x146 ./tasks/adc.o
+ .debug_line    0x00000000      0x1ec ./tasks/adc.o
+ .debug_str     0x00000000     0xa5a9 ./tasks/adc.o
+ .comment       0x00000000       0x6f ./tasks/adc.o
+ .debug_frame   0x00000000       0x50 ./tasks/adc.o
+ .ARM.attributes
+                0x00000000       0x33 ./tasks/adc.o
  .group         0x00000000        0x8 ./tasks/heartbeat_1769_003-0_c02a.o
  .group         0x00000000        0x8 ./tasks/heartbeat_1769_003-0_c02a.o
  .group         0x00000000        0x8 ./tasks/heartbeat_1769_003-0_c02a.o
@@ -109,6 +156,14 @@ Discarded input sections
  .text          0x00000000        0x0 ./tasks/heartbeat_1769_003-0_c02a.o
  .data          0x00000000        0x0 ./tasks/heartbeat_1769_003-0_c02a.o
  .bss           0x00000000        0x0 ./tasks/heartbeat_1769_003-0_c02a.o
+ .debug_macro   0x00000000      0x898 ./tasks/heartbeat_1769_003-0_c02a.o
+ .debug_macro   0x00000000       0x3a ./tasks/heartbeat_1769_003-0_c02a.o
+ .debug_macro   0x00000000       0x10 ./tasks/heartbeat_1769_003-0_c02a.o
+ .debug_macro   0x00000000      0x12d ./tasks/heartbeat_1769_003-0_c02a.o
+ .debug_macro   0x00000000      0x5b2 ./tasks/heartbeat_1769_003-0_c02a.o
+ .debug_macro   0x00000000       0x2d ./tasks/heartbeat_1769_003-0_c02a.o
+ .debug_macro   0x00000000      0xbb1 ./tasks/heartbeat_1769_003-0_c02a.o
+ .debug_macro   0x00000000       0x66 ./tasks/heartbeat_1769_003-0_c02a.o
  .group         0x00000000        0x8 ./tasks/led.o
  .group         0x00000000        0x8 ./tasks/led.o
  .group         0x00000000        0x8 ./tasks/led.o
@@ -177,13 +232,16 @@ Discarded input sections
  .text.PTT_LdInfo
                 0x00000000       0x10 ./tasks/ptt.o
  .debug_macro   0x00000000      0x898 ./tasks/ptt.o
+ .debug_macro   0x00000000       0x1c ./tasks/ptt.o
  .debug_macro   0x00000000       0x3a ./tasks/ptt.o
  .debug_macro   0x00000000       0x10 ./tasks/ptt.o
  .debug_macro   0x00000000      0x12d ./tasks/ptt.o
  .debug_macro   0x00000000      0x5b2 ./tasks/ptt.o
  .debug_macro   0x00000000       0x2d ./tasks/ptt.o
  .debug_macro   0x00000000      0xbb1 ./tasks/ptt.o
+ .debug_macro   0x00000000      0x2c7 ./tasks/ptt.o
  .debug_macro   0x00000000       0x66 ./tasks/ptt.o
+ .debug_macro   0x00000000      0x146 ./tasks/ptt.o
  .debug_macro   0x00000000       0x82 ./tasks/ptt.o
  .debug_macro   0x00000000       0x34 ./tasks/ptt.o
  .debug_macro   0x00000000       0x52 ./tasks/ptt.o
@@ -591,6 +649,110 @@ Discarded input sections
  .debug_macro   0x00000000       0x10 ./arm-nxp/cr_startup_lpc176x.o
  .debug_macro   0x00000000      0x12d ./arm-nxp/cr_startup_lpc176x.o
  .debug_macro   0x00000000      0x5b2 ./arm-nxp/cr_startup_lpc176x.o
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .text          0x00000000        0x0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .data          0x00000000        0x0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .bss           0x00000000        0x0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .text.ADC_Init
+                0x00000000       0x60 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .text.ADC_DeInit
+                0x00000000       0x4c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .text.ADC_GetData
+                0x00000000       0x10 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .text.ADC_StartCmd
+                0x00000000       0x3c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .text.ADC_BurstCmd
+                0x00000000       0x30 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .text.ADC_PowerdownCmd
+                0x00000000       0x30 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .text.ADC_EdgeStartConfig
+                0x00000000       0x3c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .text.ADC_IntConfig
+                0x00000000       0x40 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .text.ADC_ChannelCmd
+                0x00000000       0x4c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .text.ADC_ChannelGetData
+                0x00000000       0x2c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .text.ADC_ChannelGetStatus
+                0x00000000       0x48 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .text.ADC_GlobalGetData
+                0x00000000       0x20 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .text.ADC_GlobalGetStatus
+                0x00000000       0x44 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .rodata.str1.1
+                0x00000000       0x15 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_info    0x00000000      0x853 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_abbrev  0x00000000      0x19d D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_loc     0x00000000      0x52f D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_aranges
+                0x00000000       0x80 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_ranges  0x00000000       0x70 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0xa2 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0x88c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0x1c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0x3a D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0x10 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0x12d D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0x5b2 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0x2d D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0xbb1 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0x2c7 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0x66 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0xe8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000      0x2fc D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_macro   0x00000000       0xe1 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_line    0x00000000      0x3a9 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_str     0x00000000     0xb5a1 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .comment       0x00000000       0x6f D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .debug_frame   0x00000000      0x16c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .ARM.attributes
+                0x00000000       0x33 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_adc.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .text          0x00000000        0x0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .data          0x00000000        0x0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .bss           0x00000000        0x0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_SetPCLKDiv
+                0x00000000       0x50 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_Sleep
+                0x00000000       0x10 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_DeepSleep
+                0x00000000       0x1c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_PowerDown
+                0x00000000       0x1c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .text.CLKPWR_DeepPowerDown
+                0x00000000       0x1c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000      0x88c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000       0x1c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000       0x3a D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000       0x10 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000      0x12d D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000      0x5b2 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000       0x2d D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000      0xbb1 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000      0x2c7 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00000000       0x66 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
  .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
  .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
  .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
@@ -648,6 +810,7 @@ Discarded input sections
                 0x00000000       0x1c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
  .text.FIO_ByteReadValue
                 0x00000000       0x20 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000      0x88c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
  .debug_macro   0x00000000       0x1c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
  .debug_macro   0x00000000       0x3a D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
  .debug_macro   0x00000000       0x10 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
@@ -658,6 +821,21 @@ Discarded input sections
  .debug_macro   0x00000000      0x2c7 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
  .debug_macro   0x00000000       0x66 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
  .debug_macro   0x00000000       0x4c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+ .debug_macro   0x00000000       0xe1 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .text          0x00000000        0x0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .data          0x00000000        0x0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .bss           0x00000000        0x0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_macro   0x00000000      0x88c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_macro   0x00000000       0x10 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_macro   0x00000000      0x12d D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_macro   0x00000000      0x5b2 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_macro   0x00000000       0x60 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
  .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
  .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
  .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
@@ -750,6 +928,7 @@ Discarded input sections
  .debug_macro   0x00000000      0x2c7 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
  .debug_macro   0x00000000       0x66 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
  .debug_macro   0x00000000      0x1ab D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
+ .debug_macro   0x00000000      0x2fc D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
  .debug_macro   0x00000000       0xe1 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
  .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
  .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
@@ -857,54 +1036,6 @@ Discarded input sections
  .debug_macro   0x00000000       0x2d D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
  .debug_macro   0x00000000      0xbb1 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
  .debug_macro   0x00000000      0x2c7 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
- .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .text          0x00000000        0x0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .data          0x00000000        0x0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .bss           0x00000000        0x0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .text.CLKPWR_SetPCLKDiv
-                0x00000000       0x50 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .text.CLKPWR_Sleep
-                0x00000000       0x10 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .text.CLKPWR_DeepSleep
-                0x00000000       0x1c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .text.CLKPWR_PowerDown
-                0x00000000       0x1c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .text.CLKPWR_DeepPowerDown
-                0x00000000       0x1c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_macro   0x00000000      0x88c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_macro   0x00000000       0x1c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_macro   0x00000000       0x3a D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_macro   0x00000000       0x10 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_macro   0x00000000      0x12d D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_macro   0x00000000      0x5b2 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_macro   0x00000000       0x2d D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_macro   0x00000000      0xbb1 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_macro   0x00000000      0x2c7 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_macro   0x00000000       0x66 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
- .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
- .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
- .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
- .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
- .group         0x00000000        0x8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
- .text          0x00000000        0x0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
- .data          0x00000000        0x0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
- .bss           0x00000000        0x0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
- .debug_macro   0x00000000      0x88c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
- .debug_macro   0x00000000       0x10 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
- .debug_macro   0x00000000      0x12d D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
- .debug_macro   0x00000000      0x5b2 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
- .debug_macro   0x00000000       0x60 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
  .text          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(_cr__main.o)
  .data          0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(_cr__main.o)
  .bss           0x00000000        0x0 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(_cr__main.o)
@@ -1080,6 +1211,7 @@ RamAHB32         0x2007c000         0x00008000         xrw
 
 Linker script and memory map
 
+LOAD ./tasks/adc.o
 LOAD ./tasks/heartbeat_1769_003-0_c02a.o
 LOAD ./tasks/led.o
 LOAD ./tasks/ptt.o
@@ -1326,60 +1458,60 @@ END GROUP
                 0x00001d94       0x10 ./scheduler/ttc_sch_od_1769_003-0_c02b.o
  .text.main     0x00001da4       0x14 ./main/main.o
                 0x00001da4                main
- .text.GPIO_SetDir
-                0x00001db8       0x24 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
-                0x00001db8                GPIO_SetDir
- .text.GPIO_SetValue
-                0x00001ddc       0x14 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
-                0x00001ddc                GPIO_SetValue
- .text.GPIO_ClearValue
-                0x00001df0       0x14 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
-                0x00001df0                GPIO_ClearValue
- .text.GPIO_ReadValue
-                0x00001e04       0x18 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
-                0x00001e04                GPIO_ReadValue
- .text.PINSEL_ConfigPin
-                0x00001e1c       0xa0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
-                0x00001e1c                PINSEL_ConfigPin
- .text.RTC_Init
-                0x00001ebc       0x34 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
-                0x00001ebc                RTC_Init
- .text.RTC_Cmd  0x00001ef0       0x40 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
-                0x00001ef0                RTC_Cmd
- .text.UART_Init
-                0x00001f30      0x2e8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
-                0x00001f30                UART_Init
- .text.UART_SendByte
-                0x00002218       0x3c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
-                0x00002218                UART_SendByte
- .text.UART_ReceiveByte
-                0x00002254       0x3c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
-                0x00002254                UART_ReceiveByte
- .text.UART_GetLineStatus
-                0x00002290       0x3c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
-                0x00002290                UART_GetLineStatus
- .text.UART_TxCmd
-                0x000022cc       0x64 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
-                0x000022cc                UART_TxCmd
- .text.SystemInit
-                0x00002330       0xe4 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
-                0x00002330                SystemInit
  .text.CLKPWR_GetPCLKSEL
-                0x00002414       0x20 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
-                0x00002414                CLKPWR_GetPCLKSEL
+                0x00001db8       0x20 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+                0x00001db8                CLKPWR_GetPCLKSEL
  .text.CLKPWR_GetPCLK
-                0x00002434       0x28 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
-                0x00002434                CLKPWR_GetPCLK
+                0x00001dd8       0x28 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+                0x00001dd8                CLKPWR_GetPCLK
  .text.CLKPWR_ConfigPPWR
-                0x0000245c       0x38 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
-                0x0000245c                CLKPWR_ConfigPPWR
+                0x00001e00       0x38 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+                0x00001e00                CLKPWR_ConfigPPWR
+ .text.GPIO_SetDir
+                0x00001e38       0x24 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+                0x00001e38                GPIO_SetDir
+ .text.GPIO_SetValue
+                0x00001e5c       0x14 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+                0x00001e5c                GPIO_SetValue
+ .text.GPIO_ClearValue
+                0x00001e70       0x14 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+                0x00001e70                GPIO_ClearValue
+ .text.GPIO_ReadValue
+                0x00001e84       0x18 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+                0x00001e84                GPIO_ReadValue
  .text.check_failed
-                0x00002494        0x2 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
-                0x00002494                check_failed
- .text.__main   0x00002496       0x14 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(_cr__main.o)
-                0x00002496                __CR_SEMIHOST
-                0x00002496                __main
- *fill*         0x000024aa        0x2 ff
+                0x00001e9c        0x2 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+                0x00001e9c                check_failed
+ *fill*         0x00001e9e        0x2 ff
+ .text.PINSEL_ConfigPin
+                0x00001ea0       0xa0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
+                0x00001ea0                PINSEL_ConfigPin
+ .text.RTC_Init
+                0x00001f40       0x34 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
+                0x00001f40                RTC_Init
+ .text.RTC_Cmd  0x00001f74       0x40 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
+                0x00001f74                RTC_Cmd
+ .text.UART_Init
+                0x00001fb4      0x2e8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
+                0x00001fb4                UART_Init
+ .text.UART_SendByte
+                0x0000229c       0x3c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
+                0x0000229c                UART_SendByte
+ .text.UART_ReceiveByte
+                0x000022d8       0x3c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
+                0x000022d8                UART_ReceiveByte
+ .text.UART_GetLineStatus
+                0x00002314       0x3c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
+                0x00002314                UART_GetLineStatus
+ .text.UART_TxCmd
+                0x00002350       0x64 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
+                0x00002350                UART_TxCmd
+ .text.SystemInit
+                0x000023b4       0xe4 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+                0x000023b4                SystemInit
+ .text.__main   0x00002498       0x14 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(_cr__main.o)
+                0x00002498                __CR_SEMIHOST
+                0x00002498                __main
  .text._initio  0x000024ac       0xa4 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(initio.o)
                 0x000024ac                _initio
  .text.setvbuf  0x00002550       0x40 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(setvbuf.o)
@@ -1514,10 +1646,10 @@ END GROUP
  .v4_bx         0x00002ec0        0x0 linker stubs
 
 .iplt           0x00002ec0        0x0
- .iplt          0x00002ec0        0x0 ./tasks/heartbeat_1769_003-0_c02a.o
+ .iplt          0x00002ec0        0x0 ./tasks/adc.o
 
 .rel.dyn        0x00002ec0        0x0
- .rel.iplt      0x00002ec0        0x0 ./tasks/heartbeat_1769_003-0_c02a.o
+ .rel.iplt      0x00002ec0        0x0 ./tasks/adc.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
@@ -1562,7 +1694,7 @@ END GROUP
                 0x100000d0                _edata = .
 
 .igot.plt       0x100000d0        0x0 load address 0x00002f90
- .igot.plt      0x100000d0        0x0 ./tasks/heartbeat_1769_003-0_c02a.o
+ .igot.plt      0x100000d0        0x0 ./tasks/adc.o
 
 .bss_RAM2       0x2007c000        0x0
                 [!provide]                PROVIDE (__start_bss_RAM2, .)
@@ -1693,13 +1825,13 @@ OUTPUT(DCS.axf elf32-littlearm)
  .debug_info    0x000029a2      0x7e1 ./scheduler/ttc_sch_od_1769_003-0_c02b.o
  .debug_info    0x00003183       0xaf ./main/main.o
  .debug_info    0x00003232      0x28f ./arm-nxp/cr_startup_lpc176x.o
- .debug_info    0x000034c1      0xd70 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
- .debug_info    0x00004231      0x4e6 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
- .debug_info    0x00004717      0xf35 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
- .debug_info    0x0000564c     0x1bea D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
- .debug_info    0x00007236      0x318 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
- .debug_info    0x0000754e      0x67c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_info    0x00007bca       0xc3 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_info    0x000034c1      0x67c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_info    0x00003b3d      0xd70 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+ .debug_info    0x000048ad       0xc3 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_info    0x00004970      0x4e6 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
+ .debug_info    0x00004e56      0xf35 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
+ .debug_info    0x00005d8b     0x1bea D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
+ .debug_info    0x00007975      0x318 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
 
 .debug_abbrev   0x00000000     0x1cd2
  .debug_abbrev  0x00000000       0xa4 ./tasks/heartbeat_1769_003-0_c02a.o
@@ -1715,13 +1847,13 @@ OUTPUT(DCS.axf elf32-littlearm)
  .debug_abbrev  0x00000cff      0x24c ./scheduler/ttc_sch_od_1769_003-0_c02b.o
  .debug_abbrev  0x00000f4b       0x6c ./main/main.o
  .debug_abbrev  0x00000fb7      0x100 ./arm-nxp/cr_startup_lpc176x.o
- .debug_abbrev  0x000010b7      0x234 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
- .debug_abbrev  0x000012eb      0x15e D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
- .debug_abbrev  0x00001449      0x1d8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
- .debug_abbrev  0x00001621      0x377 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
- .debug_abbrev  0x00001998       0xe6 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
- .debug_abbrev  0x00001a7e      0x1e5 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_abbrev  0x00001c63       0x6f D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_abbrev  0x000010b7      0x1e5 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_abbrev  0x0000129c      0x234 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+ .debug_abbrev  0x000014d0       0x6f D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_abbrev  0x0000153f      0x15e D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
+ .debug_abbrev  0x0000169d      0x1d8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
+ .debug_abbrev  0x00001875      0x377 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
+ .debug_abbrev  0x00001bec       0xe6 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
 
 .debug_aranges  0x00000000      0x838
  .debug_aranges
@@ -1751,19 +1883,19 @@ OUTPUT(DCS.axf elf32-littlearm)
  .debug_aranges
                 0x00000450       0x80 ./arm-nxp/cr_startup_lpc176x.o
  .debug_aranges
-                0x000004d0       0xe0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+                0x000004d0       0x58 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
  .debug_aranges
-                0x000005b0       0x30 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
+                0x00000528       0xe0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
  .debug_aranges
-                0x000005e0       0xb8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
+                0x00000608       0x20 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
  .debug_aranges
-                0x00000698      0x100 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
+                0x00000628       0x30 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
  .debug_aranges
-                0x00000798       0x28 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+                0x00000658       0xb8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
  .debug_aranges
-                0x000007c0       0x58 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+                0x00000710      0x100 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
  .debug_aranges
-                0x00000818       0x20 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+                0x00000810       0x28 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
 
 .debug_ranges   0x00000000      0x7a8
  .debug_ranges  0x00000000       0x18 ./tasks/heartbeat_1769_003-0_c02a.o
@@ -1779,69 +1911,55 @@ OUTPUT(DCS.axf elf32-littlearm)
  .debug_ranges  0x00000338       0x48 ./scheduler/ttc_sch_od_1769_003-0_c02b.o
  .debug_ranges  0x00000380       0x10 ./main/main.o
  .debug_ranges  0x00000390       0x70 ./arm-nxp/cr_startup_lpc176x.o
- .debug_ranges  0x00000400       0xd0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
- .debug_ranges  0x000004d0       0x70 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
- .debug_ranges  0x00000540       0xa8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
- .debug_ranges  0x000005e8      0x150 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
- .debug_ranges  0x00000738       0x18 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
- .debug_ranges  0x00000750       0x48 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_ranges  0x00000798       0x10 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_ranges  0x00000400       0x48 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_ranges  0x00000448       0xd0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+ .debug_ranges  0x00000518       0x10 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_ranges  0x00000528       0x70 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
+ .debug_ranges  0x00000598       0xa8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
+ .debug_ranges  0x00000640      0x150 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
+ .debug_ranges  0x00000790       0x18 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
 
-.debug_macro    0x00000000     0x5307
+.debug_macro    0x00000000     0x2670
  .debug_macro   0x00000000       0xf6 ./tasks/heartbeat_1769_003-0_c02a.o
- .debug_macro   0x000000f6      0x898 ./tasks/heartbeat_1769_003-0_c02a.o
- .debug_macro   0x0000098e       0x1c ./tasks/heartbeat_1769_003-0_c02a.o
- .debug_macro   0x000009aa       0x3a ./tasks/heartbeat_1769_003-0_c02a.o
- .debug_macro   0x000009e4       0x10 ./tasks/heartbeat_1769_003-0_c02a.o
- .debug_macro   0x000009f4      0x12d ./tasks/heartbeat_1769_003-0_c02a.o
- .debug_macro   0x00000b21      0x5b2 ./tasks/heartbeat_1769_003-0_c02a.o
- .debug_macro   0x000010d3       0x2d ./tasks/heartbeat_1769_003-0_c02a.o
- .debug_macro   0x00001100      0xbb1 ./tasks/heartbeat_1769_003-0_c02a.o
- .debug_macro   0x00001cb1      0x2c7 ./tasks/heartbeat_1769_003-0_c02a.o
- .debug_macro   0x00001f78       0x82 ./tasks/heartbeat_1769_003-0_c02a.o
- .debug_macro   0x00001ffa       0x34 ./tasks/heartbeat_1769_003-0_c02a.o
- .debug_macro   0x0000202e       0x66 ./tasks/heartbeat_1769_003-0_c02a.o
- .debug_macro   0x00002094       0x4c ./tasks/heartbeat_1769_003-0_c02a.o
- .debug_macro   0x000020e0       0x64 ./tasks/heartbeat_1769_003-0_c02a.o
- .debug_macro   0x00002144       0x52 ./tasks/heartbeat_1769_003-0_c02a.o
- .debug_macro   0x00002196       0xec ./tasks/led.o
- .debug_macro   0x00002282      0x11e ./tasks/ptt.o
- .debug_macro   0x000023a0       0x1c ./tasks/ptt.o
- .debug_macro   0x000023bc      0x2c7 ./tasks/ptt.o
- .debug_macro   0x00002683      0x33e ./tasks/ptt.o
- .debug_macro   0x000029c1       0x16 ./tasks/ptt.o
- .debug_macro   0x000029d7      0x146 ./tasks/ptt.o
- .debug_macro   0x00002b1d       0x52 ./tasks/ptt.o
- .debug_macro   0x00002b6f       0x46 ./tasks/ptt.o
- .debug_macro   0x00002bb5      0x104 ./tasks/watchdog_1769_003-0_c02a.o
- .debug_macro   0x00002cb9       0x70 ./tasks/watchdog_1769_003-0_c02a.o
- .debug_macro   0x00002d29       0x22 ./tasks/watchdog_1769_003-0_c02a.o
- .debug_macro   0x00002d4b      0x12d ./tasks/weather_station.o
- .debug_macro   0x00002e78       0x60 ./tasks/weather_station.o
- .debug_macro   0x00002ed8      0x250 ./tasks/weather_station.o
- .debug_macro   0x00003128      0x133 ./tasks/wifi_esp8266.o
- .debug_macro   0x0000325b       0xf5 ./task_support/DCS_buffer.o
- .debug_macro   0x00003350       0xa3 ./task_support/rtc.o
- .debug_macro   0x000033f3      0x1ab ./task_support/rtc.o
- .debug_macro   0x0000359e       0xac ./task_support/uart.o
- .debug_macro   0x0000364a      0x140 ./task_support/uart.o
- .debug_macro   0x0000378a      0x344 ./task_support/uart.o
- .debug_macro   0x00003ace      0x151 ./system/system_1769_003-0_c03a.o
- .debug_macro   0x00003c1f       0xec ./scheduler/ttc_sch_od_1769_003-0_c02b.o
- .debug_macro   0x00003d0b       0xec ./main/main.o
- .debug_macro   0x00003df7       0x52 ./arm-nxp/cr_startup_lpc176x.o
- .debug_macro   0x00003e49       0x99 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
- .debug_macro   0x00003ee2      0x88c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
- .debug_macro   0x0000476e       0xe1 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
- .debug_macro   0x0000484f       0x90 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
- .debug_macro   0x000048df       0xa2 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
- .debug_macro   0x00004981      0x2fc D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
- .debug_macro   0x00004c7d       0xa2 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
- .debug_macro   0x00004d1f      0x12d D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
- .debug_macro   0x00004e4c       0x90 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_macro   0x00004edc      0x2f6 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_macro   0x000051d2       0x5a D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
- .debug_macro   0x0000522c       0xdb D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_macro   0x000000f6       0x1c ./tasks/heartbeat_1769_003-0_c02a.o
+ .debug_macro   0x00000112      0x2c7 ./tasks/heartbeat_1769_003-0_c02a.o
+ .debug_macro   0x000003d9       0x82 ./tasks/heartbeat_1769_003-0_c02a.o
+ .debug_macro   0x0000045b       0x34 ./tasks/heartbeat_1769_003-0_c02a.o
+ .debug_macro   0x0000048f       0x4c ./tasks/heartbeat_1769_003-0_c02a.o
+ .debug_macro   0x000004db       0x64 ./tasks/heartbeat_1769_003-0_c02a.o
+ .debug_macro   0x0000053f       0x52 ./tasks/heartbeat_1769_003-0_c02a.o
+ .debug_macro   0x00000591       0xec ./tasks/led.o
+ .debug_macro   0x0000067d      0x11e ./tasks/ptt.o
+ .debug_macro   0x0000079b      0x33e ./tasks/ptt.o
+ .debug_macro   0x00000ad9       0x16 ./tasks/ptt.o
+ .debug_macro   0x00000aef       0x52 ./tasks/ptt.o
+ .debug_macro   0x00000b41       0x46 ./tasks/ptt.o
+ .debug_macro   0x00000b87      0x104 ./tasks/watchdog_1769_003-0_c02a.o
+ .debug_macro   0x00000c8b       0x70 ./tasks/watchdog_1769_003-0_c02a.o
+ .debug_macro   0x00000cfb       0x22 ./tasks/watchdog_1769_003-0_c02a.o
+ .debug_macro   0x00000d1d      0x12d ./tasks/weather_station.o
+ .debug_macro   0x00000e4a       0x60 ./tasks/weather_station.o
+ .debug_macro   0x00000eaa      0x250 ./tasks/weather_station.o
+ .debug_macro   0x000010fa      0x133 ./tasks/wifi_esp8266.o
+ .debug_macro   0x0000122d       0xf5 ./task_support/DCS_buffer.o
+ .debug_macro   0x00001322       0xa3 ./task_support/rtc.o
+ .debug_macro   0x000013c5      0x1ab ./task_support/rtc.o
+ .debug_macro   0x00001570       0xac ./task_support/uart.o
+ .debug_macro   0x0000161c      0x140 ./task_support/uart.o
+ .debug_macro   0x0000175c      0x344 ./task_support/uart.o
+ .debug_macro   0x00001aa0      0x151 ./system/system_1769_003-0_c03a.o
+ .debug_macro   0x00001bf1       0xec ./scheduler/ttc_sch_od_1769_003-0_c02b.o
+ .debug_macro   0x00001cdd       0xec ./main/main.o
+ .debug_macro   0x00001dc9       0x52 ./arm-nxp/cr_startup_lpc176x.o
+ .debug_macro   0x00001e1b       0x90 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x00001eab      0x2f6 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_macro   0x000021a1       0x99 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+ .debug_macro   0x0000223a       0x5a D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_macro   0x00002294       0xdb D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_macro   0x0000236f       0x90 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
+ .debug_macro   0x000023ff       0xa2 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
+ .debug_macro   0x000024a1       0xa2 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
+ .debug_macro   0x00002543      0x12d D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
 
 .debug_line     0x00000000     0x5078
  .debug_line    0x00000000      0x3f1 ./tasks/heartbeat_1769_003-0_c02a.o
@@ -1857,13 +1975,13 @@ OUTPUT(DCS.axf elf32-littlearm)
  .debug_line    0x00002cb3      0x506 ./scheduler/ttc_sch_od_1769_003-0_c02b.o
  .debug_line    0x000031b9      0x34e ./main/main.o
  .debug_line    0x00003507      0x1f0 ./arm-nxp/cr_startup_lpc176x.o
- .debug_line    0x000036f7      0x3e5 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
- .debug_line    0x00003adc      0x225 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
- .debug_line    0x00003d01      0x58a D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
- .debug_line    0x0000428b      0x7d4 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
- .debug_line    0x00004a5f      0x212 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
- .debug_line    0x00004c71      0x289 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_line    0x00004efa      0x17e D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_line    0x000036f7      0x289 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_line    0x00003980      0x3e5 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+ .debug_line    0x00003d65      0x17e D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_line    0x00003ee3      0x225 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
+ .debug_line    0x00004108      0x58a D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
+ .debug_line    0x00004692      0x7d4 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
+ .debug_line    0x00004e66      0x212 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
 
 .debug_str      0x00000000    0x11473
  .debug_str     0x00000000     0xa127 ./tasks/heartbeat_1769_003-0_c02a.o
@@ -1892,20 +2010,20 @@ OUTPUT(DCS.axf elf32-littlearm)
                                0xa13b (size before relaxing)
  .debug_str     0x0000e97d      0x1b6 ./arm-nxp/cr_startup_lpc176x.o
                                0x3e3a (size before relaxing)
- .debug_str     0x0000eb33      0x6ab D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
-                               0x9f2e (size before relaxing)
- .debug_str     0x0000f1de      0x212 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
-                               0x9e2b (size before relaxing)
- .debug_str     0x0000f3f0     0x14c8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
-                               0xb71b (size before relaxing)
- .debug_str     0x000108b8      0x812 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
-                               0xcc22 (size before relaxing)
- .debug_str     0x000110ca      0x2e0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
-                               0x99b0 (size before relaxing)
- .debug_str     0x000113aa       0xa4 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_str     0x0000eb33     0x13f9 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
                                0xabb9 (size before relaxing)
- .debug_str     0x0001144e       0x25 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_str     0x0000ff2c      0x583 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+                               0x9f2e (size before relaxing)
+ .debug_str     0x000104af       0x32 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
                                0x3f68 (size before relaxing)
+ .debug_str     0x000104e1      0x209 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
+                               0x9e2b (size before relaxing)
+ .debug_str     0x000106ea      0x2a6 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
+                               0xb71b (size before relaxing)
+ .debug_str     0x00010990      0x803 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
+                               0xcc22 (size before relaxing)
+ .debug_str     0x00011193      0x2e0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+                               0x99b0 (size before relaxing)
 
 .comment        0x00000000       0xdc
  .comment       0x00000000       0x6e ./tasks/heartbeat_1769_003-0_c02a.o
@@ -1922,13 +2040,13 @@ OUTPUT(DCS.axf elf32-littlearm)
  .comment       0x0000006e       0x6f ./scheduler/ttc_sch_od_1769_003-0_c02b.o
  .comment       0x0000006e       0x6f ./main/main.o
  .comment       0x0000006e       0x6f ./arm-nxp/cr_startup_lpc176x.o
+ .comment       0x0000006e       0x6f D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
  .comment       0x0000006e       0x6f D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+ .comment       0x0000006e       0x6f D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
  .comment       0x0000006e       0x6f D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
  .comment       0x0000006e       0x6f D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
  .comment       0x0000006e       0x6f D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
  .comment       0x0000006e       0x6f D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
- .comment       0x0000006e       0x6f D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .comment       0x0000006e       0x6f D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
  .comment       0x0000006e       0x6e c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(_cr__main.o)
                                  0x6f (size before relaxing)
  .comment       0x000000dc       0x6f c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_c.a(initio.o)
@@ -1981,19 +2099,19 @@ OUTPUT(DCS.axf elf32-littlearm)
  .ARM.attributes
                 0x00000264       0x33 ./arm-nxp/cr_startup_lpc176x.o
  .ARM.attributes
-                0x00000297       0x33 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+                0x00000297       0x33 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
  .ARM.attributes
-                0x000002ca       0x33 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
+                0x000002ca       0x33 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
  .ARM.attributes
-                0x000002fd       0x33 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
+                0x000002fd       0x33 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
  .ARM.attributes
-                0x00000330       0x33 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
+                0x00000330       0x33 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
  .ARM.attributes
-                0x00000363       0x33 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
+                0x00000363       0x33 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
  .ARM.attributes
-                0x00000396       0x33 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+                0x00000396       0x33 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
  .ARM.attributes
-                0x000003c9       0x33 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+                0x000003c9       0x33 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
  .ARM.attributes
                 0x000003fc       0x33 c:/nxp/lpcxpresso_8.2.2_650/lpcxpresso/tools/bin/../lib/gcc/arm-none-eabi/5.4.1/../../../../arm-none-eabi/lib/armv7-m\libcr_semihost.a(_cr__main.o)
  .ARM.attributes
@@ -2073,17 +2191,17 @@ OUTPUT(DCS.axf elf32-littlearm)
  .debug_frame   0x00000c98      0x12c ./scheduler/ttc_sch_od_1769_003-0_c02b.o
  .debug_frame   0x00000dc4       0x2c ./main/main.o
  .debug_frame   0x00000df0      0x170 ./arm-nxp/cr_startup_lpc176x.o
- .debug_frame   0x00000f60      0x1c0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
- .debug_frame   0x00001120       0x4c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
- .debug_frame   0x0000116c      0x22c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
- .debug_frame   0x00001398      0x32c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
- .debug_frame   0x000016c4       0x3c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
- .debug_frame   0x00001700       0xa8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
- .debug_frame   0x000017a8       0x20 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_frame   0x00000f60       0xa8 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_frame   0x00001008      0x1c0 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+ .debug_frame   0x000011c8       0x20 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_libcfg_default.o)
+ .debug_frame   0x000011e8       0x4c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
+ .debug_frame   0x00001234      0x22c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
+ .debug_frame   0x00001460      0x32c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
+ .debug_frame   0x0000178c       0x3c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(system_LPC17xx.o)
 
 .debug_loc      0x00000000     0x261c
- .debug_loc     0x00000000      0x76a D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
- .debug_loc     0x0000076a      0x15c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
- .debug_loc     0x000008c6      0x978 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
- .debug_loc     0x0000123e     0x1235 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)
- .debug_loc     0x00002473      0x1a9 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_loc     0x00000000      0x1a9 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_clkpwr.o)
+ .debug_loc     0x000001a9      0x76a D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_gpio.o)
+ .debug_loc     0x00000913      0x15c D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_pinsel.o)
+ .debug_loc     0x00000a6f      0x978 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_rtc.o)
+ .debug_loc     0x000013e7     0x1235 D:\Santiago\Universidad\PPS\Workspaces\Pruebas\CMSIS_CORE_LPC17xx\Debug\libCMSIS_CORE_LPC17xx.a(lpc17xx_uart.o)

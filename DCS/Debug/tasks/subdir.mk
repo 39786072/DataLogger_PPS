@@ -4,6 +4,7 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../tasks/adc.c \
 ../tasks/heartbeat_1769_003-0_c02a.c \
 ../tasks/led.c \
 ../tasks/ptt.c \
@@ -12,6 +13,7 @@ C_SRCS += \
 ../tasks/wifi_esp8266.c 
 
 OBJS += \
+./tasks/adc.o \
 ./tasks/heartbeat_1769_003-0_c02a.o \
 ./tasks/led.o \
 ./tasks/ptt.o \
@@ -20,6 +22,7 @@ OBJS += \
 ./tasks/wifi_esp8266.o 
 
 C_DEPS += \
+./tasks/adc.d \
 ./tasks/heartbeat_1769_003-0_c02a.d \
 ./tasks/led.d \
 ./tasks/ptt.d \
