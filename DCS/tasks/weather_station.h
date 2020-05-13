@@ -144,10 +144,7 @@
 #define HEADER 							 	0x01
 #define SENSOR_IMAGE_LENGTH					18
 
-/* ACK, CR AND LF*/
-#define ACK 							0x06
-#define NACK							0x21
-#define CR 								0x0d
+
 
 
 #define WAIT_TIMES						6000
@@ -250,6 +247,8 @@ uint16_t getCurrentBatteryVoltage();
 
 /* Cardinal Point */
 char* cardinalPoint(uint16_t point);
+
+uint32_t WS_getSamples(void);
 void WS_TxRx(void);
 
 #endif /* TASKS_WEATHER_STATION_H_ */

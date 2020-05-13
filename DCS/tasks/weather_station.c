@@ -11,6 +11,12 @@
 #include "../task_support/DCS_buffer.h"
 #include "../system/system_1769_003-0_c03a.h"
 #include "../port/port_1769_003-0_c03a.h"
+
+/* ACK, CR AND LF*/
+#define ACK 							0x06
+#define NACK							0x21
+#define CR 								0x0d
+
 typedef enum {
 	Wait = 0,
 	WaitForACK = 1,
@@ -25,7 +31,6 @@ static WS_Fields ActualField;
 static States ActualState;
 
 static uint16_t StateCounter;
-static uint16_t MEFCounter;
 
 static uint16_t data;
 uint8_t aux;
@@ -120,6 +125,8 @@ void WS_UpdateData(){
 					ActualState = SendCommand;
 					if (ActualField == WEATHER_DATA-1)
 					{
+						samples++;
+						//update samples en datos compartidos
 						ActualState = Wait;
 						StateCounter = 0;
 					}
@@ -496,6 +503,11 @@ uint16_t getCurrentYearlyRain(){
  */
 uint16_t getCurrentBatteryVoltage(){
 	return weather_data[BATTERY_VOLTAGE][CURRENT_DATA];
+}
+
+uint32_t WS_getSamples(void)
+{
+	return samples;
 }
 void WS_TxRx(void) {
 	uint8_t aux = BUFFER_Pop(Ws_Tx);
