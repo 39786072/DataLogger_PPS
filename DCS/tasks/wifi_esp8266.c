@@ -12,6 +12,7 @@
 #include "lpc17xx_gpio.h"
 #include "../system/system_1769_003-0_c03a.h"
 #include "../task_support/rtc.h"
+#include "weather_station.h"
 #define HEADER_LENGHT 160
 typedef enum {
 	Init = 0,
@@ -191,6 +192,7 @@ void WIFI_Task() {
 	static uint8_t const * Wifi_Required_Text;
 	static uint32_t Wifi_Waiting_Times;
 	static uint8_t Wifi_Waiting_Index;
+	static uint32_t samples;
 	uint8_t auxChar;
 	uint8_t auxDateString[25];
 	static uint8_t * HTTP;
@@ -299,16 +301,14 @@ void WIFI_Task() {
 
 	case Running:
 		//Verificar si hay nuevos datos que enviar a ubidots y enviarlos
-		if (Wifi_Old_State == Waiting) {
+		if (samples < WS_getSamples())
+		{
+			samples++;
 			BUFFER_Flush(Wifi_Rx);
 			Wifi_Old_State = Running;
 			Wifi_Current_State = StartConnection;
-		} else {
-			BUFFER_Flush(Wifi_Rx);
-			Wifi_Waiting_Times = 500;
-			Wifi_Old_State = Running;
-			Wifi_Current_State = Waiting;
 		}
+
 		break;
 
 	case WaitingForString:
